@@ -3,6 +3,8 @@
 ## Project setup
 ```
 npm install
+vue add vuetify
+Configure n y y y mdi y 
 ```
 
 ### Compiles and hot-reloads for development
