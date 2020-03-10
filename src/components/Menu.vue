@@ -1,16 +1,19 @@
 <template>
-  <div class="text-center" style="margin-right: 20px;" data-app="true">
+  <div class="text-center" style="margin-right: 2vw;" data-app="true">
     <v-menu
-          transition="slide-y-transition"
-          bottom
+		transition="slide-y-transition"
+		open-on-hover
+		bottom
         >
           <template v-slot:activator="{ on }">
             <v-btn
               class="purple"
               style="background-color: transparent;"
               v-on="on"
+				fab
+			small
             >
-				<v-icon xx-large color="purple darken-2">mdi-dialpad</v-icon>
+				<v-app-bar-nav-icon></v-app-bar-nav-icon>
             </v-btn>
           </template>
           <v-list style="background-color: dodgerblue; font-weight: 700;">
@@ -43,7 +46,7 @@ export default {
 			else if(keyword == "主页")
 				window.location.href="https://beentherebuddy.com/";
 			else
-				window.location.href="https://beentherebuddy.com/beenthere-2";
+				window.location.href=window.location.href + "about";
 		}
 	}
 }
