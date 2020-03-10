@@ -1,24 +1,16 @@
 <template>
-	<div>
-		<Header/>
-		<Footer/>
+	<div id="app">
+		<router-view></router-view>
 	</div>
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld';
-import Footer from './components/Footer.vue'
-import Header from './components/Header.vue'
-
 
 
 export default {
   name: 'App',
 
   components: {
-    // HelloWorld,
-	Footer,
-	Header
   },
 
   data: () => ({
@@ -26,3 +18,9 @@ export default {
   }),
 };
 </script>
+
+<style>
+	body{
+		background-color: #FFB74D;
+	}
+</style>
