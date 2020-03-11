@@ -1,6 +1,11 @@
 <template>
 	<div style="background-color: white; font-family: arial black;">
-		<img src="../assets/home/header.png" class="home-header-background">
+		<div class="home-header-background">
+			<div style="font-family: arial rounded mt bold; color: white; font-size: 2.5vw; padding-top: 20vw; padding-bottom: 20vw; filter: brightness(150%);">
+				<p style="font-size: 5vw;">Beenthere</p>
+				<p>全球青年心灵互助社区</p>
+			</div>
+		</div>
 		<div style="text-align: center; margin-top: 10vw;">
 			<v-img src="../assets/home/car.png" width="27vw" style="display: inline-block;"></v-img>
 			<!-- <img src="../assets/home/car.png" style="width: 27vw; height: auto;"> -->
@@ -29,7 +34,7 @@
 				<p style="margin-top: 3vw;">无需缴费！无需注册！无需预约！</p>
 				<p style="margin-top: 1vw;">不限时长！不限次数！匿名倾诉！</p>
 				<p style="margin-top: 3vw;">一个视频快速了解我们：</p>
-				<iframe src="//player.bilibili.com/player.html?aid=41061359&amp;cid=72125301&amp;page=1" scrolling="no" border="1" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 88.8vw; height: 50vw; margin-top: 2vw;">
+				<iframe src="//player.bilibili.com/player.html?aid=41061359&amp;cid=72125301&amp;page=1" scrolling="yes" border="1" frameborder="yes" framespacing="2" allowfullscreen="true" style="width: 88.8vw; height: 50vw; margin-top: 2vw;">
 				</iframe>
 			</div>
 			
@@ -37,7 +42,7 @@
 				<div><a href="https://tawk.to/chat/5d0cf96336eab972111899f7/default?%24_tawk_sk=5dab16685380b6a7d21de80c&%24_tawk_tk=6a8b31237ab901f2a3e662e9a86cc743&v=679" class="home-tawk-to">我们聊聊吧!</a></div>
 				<div style="margin-top: 2vw;;"><a href="https://shimo.im/sheets/XDhvpJ8QQKh6XvHq/xUGGo" class="home-shimo-link">查看值班表，好buddy不会丢！</a></div>
 			</div>
-			<img src="../assets/home/yellow.png" style="width: 120vw; height: auto;">
+			<img src="../assets/home/yellow.png" style="width: 100vw; height: auto;">
 			
 			<div style="text-align: center; margin-top: 3vw;">
 				<p style="color: #fc6; font-size: 4vw;">来访者感悟</p>
@@ -56,7 +61,7 @@
 				</div>
 				
 			</div>
-			<img src="../assets/home/pink.png" style="width: 120vw; height: auto;">
+			<img src="../assets/home/pink.png" style="width: 100vw; height: auto;">
 			<div style="text-align: center;">
 				<p style="color: #e07171; font-size: 4vw; margin-top: 3vw;" class="">赞助团体 | Credentials</p>
 				<div style="margin-top: 3vw;">
@@ -103,10 +108,10 @@
 
 <style>
 	.home-header-background{
-		width: 100%;
-		height: 40%;
 		/* position: relative; */
-		filter: brightness(80%);
+		background-size: contain;
+		text-align: center;
+		background-image: url(../assets/home/header.png);
 	}
 	.home-shimo-link{
 		color: #ffce8f;
@@ -152,4 +157,29 @@
 		margin-left: 2vw;
 		display: inline-block;
 	}
+	
+	@-webkit-keyframes blur {
+		0% {
+			-webkit-filter: blur(10px); /* Chrome, Opera */
+			-moz-filter: blur(10px);
+			-ms-filter: blur(10px);
+			filter: blur(10px);
+		}
+		50% {
+			-webkit-filter: blur(5px);
+			-moz-filter: blur(5px);
+			-ms-filter: blur(5px);
+			filter: blur(5px);
+		}
+		100% {
+			-webkit-filter: blur(0px); 
+			-moz-filter: blur(0px);
+			-ms-filter: blur(0px);
+			filter: blur(0px);
+		}
+	}
+	img{-webkit-animation-name: blur; /*动画名称*/
+	-webkit-animation-duration: 1s; /*动画持续时间*/
+	-webkit-animation-iteration-count: 1; /*动画次数*/
+	-webkit-animation-delay: 0s; /*延迟时间*/}
 </style>

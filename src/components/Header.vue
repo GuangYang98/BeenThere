@@ -2,7 +2,7 @@
 	<div class="header-block" id="header-block">
 		<img src="../assets/logo.png" class="header-logo" id="logo">
 		<Menu id="scaled-menu" style="float:right; 
-		margin-right: 4vw; display: inline-block;"/>
+		margin-right: 4vw; display: none;"/>
 		<div class="header-text-nav" id="nav">
 			<a class="header-home" href="">主页</a>
 			<a class="header-members" href="about">Beenthere大家庭</a>
