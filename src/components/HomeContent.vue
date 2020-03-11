@@ -6,7 +6,7 @@
 				<p>全球青年心灵互助社区</p>
 			</div>
 		</div>
-		<div style="text-align: center; margin-top: 10vw;">
+		<div style="text-align: center; margin-top: 10vw; font-family: arial rounded mt bold; font-weight: bold;">
 			<v-img src="../assets/home/car.png" width="27vw" style="display: inline-block;"></v-img>
 			<!-- <img src="../assets/home/car.png" style="width: 27vw; height: auto;"> -->
 			<div style="display: inline-block; margin-left: 30px; margin-top: 10px;">
@@ -24,7 +24,7 @@
 				<div style="margin-top: 2vw;;"><a href="https://shimo.im/sheets/XDhvpJ8QQKh6XvHq/xUGGo" class="home-shimo-link">查看值班表，好buddy不会丢！</a></div>
 			</div>
 			<v-divider class="home-divider"></v-divider>
-			<div style="text-align: center; margin-top: 3vw; font-size: 1.2vw;">
+			<div style="text-align: center; margin-top: 3vw; font-size: 1.2vw; font-weight: bold;">
 				<p>BeenThere</p>
 				<p style="margin-top: 1vw;">是一个源自哈佛中国学生的全球青年心灵互助社区</p>
 				<p style="margin-top: 1vw;">我们来自各地，有着不同的经历</p>
@@ -71,11 +71,11 @@
 					</div>
 					<div class="home-sponsor-block">
 						<img src="../assets/home/Legatum.jpeg" class="home-sponsor-image">
-						<p>MIT社会创新发展中心赞助项目</p>
+						<p>MIT 社会创新发展中心赞助项目</p>
 					</div>
 					<div class="home-sponsor-block">
 						<img src="../assets/home/MITCHIEF.png" class="home-sponsor-image">
-						<p>MIT中国创新与创业论坛成员团队</p>
+						<p>MIT 中国创新与创业论坛成员团队</p>
 					</div>
 				</div>
 				<div style="margin-top: 4vw;">
