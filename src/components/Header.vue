@@ -2,7 +2,7 @@
 	<div class="header-block" id="header-block">
 		<img src="../assets/logo.png" class="header-logo" id="logo">
 		<Menu id="scaled-menu" style="float:right; 
-		margin-right: 4vw; display: inline;"/>
+		margin-right: 4vw; display: inline-block;"/>
 		<div class="header-text-nav" id="nav">
 			<a class="header-home" href="">主页</a>
 			<a class="header-members" href="about">Beenthere大家庭</a>
@@ -15,7 +15,7 @@
 	import Menu from "./Menu.vue"
 	
 	window.onload = function () {
-		if(document.documentElement.clientWidth < 600) {
+		if(document.documentElement.clientWidth < 800) {
 			// document.getElementById("nav").style.visibility="hidden";
 			document.getElementById("nav").style.display="none";
 			document.getElementById("scaled-menu").style.display="";
@@ -24,13 +24,31 @@
 			document.getElementById("nav").style.display="";
 			document.getElementById("scaled-menu").style.display="none";
 		}
+		
+		
+		// if(document.documentElement.clientWidth < 500) {
+		// 	// document.getElementById("nav").style.visibility="hidden";
+		// 	document.getElementById("logo").style.width="148px";
+		// 	document.getElementById("logo").style.height="50px";
+		// 	document.getElementById("logo").style.marginTop="10px";
+		// 	document.getElementById("header-block").style.height="70px";
+		// 	document.getElementById("header-block").style.lineHeight="70px";
+		// 	// document.getElementById("scaled-menu").style.marginTop="20px";
+		// } else{
+		// 	document.getElementById("logo").style.width="296px";
+		// 	document.getElementById("logo").style.height="100px";
+		// 	document.getElementById("logo").style.marginTop="20px";
+		// 	document.getElementById("header-block").style.height="140px";
+		// 	document.getElementById("header-block").style.lineHeight="140px";
+		// 	// document.getElementById("scaled-menu").style.marginTop="20px";
+		// }
 		
 		
 	}
 	
 	window.onresize = function () {
 		// console.log("宽度：" + document.documentElement.clientWidth);
-		if(document.documentElement.clientWidth < 600) {
+		if(document.documentElement.clientWidth < 800) {
 			// document.getElementById("nav").style.visibility="hidden";
 			document.getElementById("nav").style.display="none";
 			document.getElementById("scaled-menu").style.display="";
@@ -39,6 +57,23 @@
 			document.getElementById("nav").style.display="";
 			document.getElementById("scaled-menu").style.display="none";
 		}
+		
+		// if(document.documentElement.clientWidth < 500) {
+		// 	// document.getElementById("nav").style.visibility="hidden";
+		// 	document.getElementById("logo").style.width="148px";
+		// 	document.getElementById("logo").style.height="50px";
+		// 	document.getElementById("logo").style.marginTop="10px";
+		// 	document.getElementById("header-block").style.height="50px";
+		// 	document.getElementById("header-block").style.lineHeight="50px";
+		// 	document.getElementById("scaled-menu").style.marginTop="20px";
+		// } else{
+		// 	document.getElementById("logo").style.width="296px";
+		// 	document.getElementById("logo").style.height="100px";
+		// 	document.getElementById("logo").style.marginTop="20px";
+		// 	document.getElementById("header-block").style.height="140px";
+		// 	document.getElementById("header-block").style.lineHeight="140px";
+		// 	// document.getElementById("scaled-menu").style.marginTop="20px";
+		// }
 		
 	}
 	export default {
@@ -56,6 +91,7 @@
 		width: 100%;
 		height: 140px;
 		line-height: 140px;
+		font-family: "arial rounded mt bold";
 	}
 	.header-logo{
 		width: 296px;
@@ -75,22 +111,21 @@
 	}
 	.header-home{
 		display: inline;
-		font-size: 17px;
-		font-family: "microsoft yahei";
+		font-size: 27px;
 		font-weight: bold;
 		color: white;
-		margin-right: 10px;
+		margin-right: 25px;
 	}
 	.header-members{
 		display: inline;
 		font-weight: bold;
-		font-size: 17px;
+		font-size: 27px;
 		color: white;
-		margin-right: 10px;
+		margin-right: 25px;
 	}
 	.header-join{
 		display: inline;
-		font-size: 17px;
+		font-size: 27px;
 		font-weight: bold;
 		padding: 20px;
 		-webkit-transition-property:background-color, color;

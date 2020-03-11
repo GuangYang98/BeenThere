@@ -4,8 +4,6 @@
 		z-index: 999999; background-color: transparent; 
 		-webkit-transition: .5s ease-in-out;" id="home-header"/>
 		<HomeContent/>
-		<HomeContent/>
-		<HomeContent/>
 		<Footer/>
 	</div>
 </template>
