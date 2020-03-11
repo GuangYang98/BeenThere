@@ -4,7 +4,7 @@
 		<Menu id="scaled-menu" style="float:right; 
 		margin-right: 4vw; display: inline;"/>
 		<div class="header-text-nav" id="nav">
-			<a class="header-home" href="https://beentherebuddy.com/">主页</a>
+			<a class="header-home" href="">主页</a>
 			<a class="header-members" href="about">Beenthere大家庭</a>
 			<a class="header-join" href="https://beentherebuddy.com/711943786725">我要加入</a>
 		</div>
@@ -15,7 +15,7 @@
 	import Menu from "./Menu.vue"
 	
 	window.onload = function () {
-		if(document.documentElement.clientWidth < 800) {
+		if(document.documentElement.clientWidth < 500) {
 			// document.getElementById("nav").style.visibility="hidden";
 			document.getElementById("nav").style.display="none";
 			document.getElementById("scaled-menu").style.display="";
@@ -25,18 +25,11 @@
 			document.getElementById("scaled-menu").style.display="none";
 		}
 		
-		if(document.documentElement.clientWidth < 400) {
-			// document.getElementById("nav").style.visibility="hidden";
-			document.getElementById("header-block").style.height="14vw";
-			document.getElementById("header-block").style.lineHeight="14vw";
-			document.getElementById("logo").style.marginTop="3.25vw";
-		}
-		
 	}
 	
 	window.onresize = function () {
 		// console.log("宽度：" + document.documentElement.clientWidth);
-		if(document.documentElement.clientWidth < 800) {
+		if(document.documentElement.clientWidth < 500) {
 			// document.getElementById("nav").style.visibility="hidden";
 			document.getElementById("nav").style.display="none";
 			document.getElementById("scaled-menu").style.display="";

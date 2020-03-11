@@ -12,15 +12,17 @@
               v-on="on"
 				fab
 			small
+			depressed="true"
             >
-				<v-app-bar-nav-icon></v-app-bar-nav-icon>
+				<v-app-bar-nav-icon ></v-app-bar-nav-icon>
+				
             </v-btn>
           </template>
           <v-list style="background-color: dodgerblue; font-weight: 700;">
             <v-list-item
               v-for="(item, i) in items"
               :key="i"
-              @click="jump(i)"
+              @click="jump(item.title)"
             >
               <v-list-item-title style="color: white;">{{ item.title }}</v-list-item-title>
             </v-list-item>
@@ -44,7 +46,7 @@ export default {
 			if(keyword == "我要加入")
 				window.location.href="https://beentherebuddy.com/711943786725";
 			else if(keyword == "主页")
-				window.location.href="https://beentherebuddy.com/";
+				window.location.href="/";
 			else
 				window.location.href=window.location.href + "about";
 		}

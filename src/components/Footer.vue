@@ -1,7 +1,7 @@
 <template>
 	<div class="footer-block">
 		<div style="font-size: 2vw;">
-			<p style="margin-top: 2vw;font-size: 5vw; text-align: center;">关注我们</p>
+			<p style="margin-top: 2vw;font-size: 4vw; text-align: center;">关注我们</p>
 			<p style="margin-top: 3vw;">我们不是心理医生，但是为你整理了国内外的专业免费 <a href="https://beentherebuddy.com/urgsituation">[心理支持服务热线]</a>，希望能够帮到你</p>
 			<img src="../assets/qrcode.jpg" class="footer-qrcode" style="margin-top: 2vw;">
 			<!-- Here the b should serve as a stronger decoration, but it seems unseless -->
