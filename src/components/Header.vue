@@ -15,7 +15,7 @@
 	import Menu from "./Menu.vue"
 	
 	window.onload = function () {
-		if(document.documentElement.clientWidth < 500) {
+		if(document.documentElement.clientWidth < 600) {
 			// document.getElementById("nav").style.visibility="hidden";
 			document.getElementById("nav").style.display="none";
 			document.getElementById("scaled-menu").style.display="";
@@ -25,11 +25,12 @@
 			document.getElementById("scaled-menu").style.display="none";
 		}
 		
+		
 	}
 	
 	window.onresize = function () {
 		// console.log("宽度：" + document.documentElement.clientWidth);
-		if(document.documentElement.clientWidth < 500) {
+		if(document.documentElement.clientWidth < 600) {
 			// document.getElementById("nav").style.visibility="hidden";
 			document.getElementById("nav").style.display="none";
 			document.getElementById("scaled-menu").style.display="";
@@ -53,13 +54,13 @@
 		/* background-color: #2892b8; */
 		background-color: #EF6C00;
 		width: 100%;
-		height: 10vw;
-		line-height: 10vw;
+		height: 140px;
+		line-height: 140px;
 	}
 	.header-logo{
-		width: 22.5vw;
-		height: 7.5vw;
-		margin-top: 1.25vw;
+		width: 296px;
+		height: 100px;
+		margin-top: 20px;
 		margin-left: 1.3vw;
 		float: left;
 		display: inline;
@@ -74,24 +75,24 @@
 	}
 	.header-home{
 		display: inline;
-		font-size: 1.7vw;
+		font-size: 17px;
 		font-family: "microsoft yahei";
 		font-weight: bold;
 		color: white;
-		margin-right: 4vw;
+		margin-right: 10px;
 	}
 	.header-members{
 		display: inline;
 		font-weight: bold;
-		font-size: 1.7vw;
+		font-size: 17px;
 		color: white;
-		margin-right: 4vw;
+		margin-right: 10px;
 	}
 	.header-join{
 		display: inline;
-		font-size: 1.7vw;
+		font-size: 17px;
 		font-weight: bold;
-		padding: 1.5vw;
+		padding: 20px;
 		-webkit-transition-property:background-color, color;
 		-webkit-transition-duration:0.5s;
 		-webkit-transition-timing-function: ease;
