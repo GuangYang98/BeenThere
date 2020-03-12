@@ -35,7 +35,7 @@
 			
 			<div style="font-family: arial rounded mt bold; padding-left: 5vw; padding-top: 3vw;">
 				<p>您的学校、专业，或工作单位、现任岗位 *</p>
-				<p style="color: gray; font-size: 1vw;" id="join-comment">为保证团队质量，我们会进行一定的背景调查</p>
+				<p style="color: gray; font-size: 1.5vw;" id="join-comment">为保证团队质量，我们会进行一定的背景调查</p>
 				<v-text-field style="width: 50vw;"></v-text-field>
 			</div>
 			
@@ -59,15 +59,6 @@
 </template>
 
 <script>
-	window.onreadystatechange = function () {
-		if(document.documentElement.clientWidth < 500) {
-			document.getElementById("join-content-block").style.fontSize="3vw";
-			document.getElementById("join-comment").style.fontSize="2.5vw";
-		}else{
-			document.getElementById("join-content-block").style.fontSize="1.6vw";
-			document.getElementById("join-comment").style.fontSize="1.4vw";
-		}
-	}
 	export default {
 		name: "JoinContent",
 		

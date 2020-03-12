@@ -14,7 +14,7 @@
 <script>
 	import Menu from "./Menu.vue"
 	console.log(window.location.href);
-	if(window.location.href=="http://47.103.90.218/") {
+	if(window.location.href=="http://47.103.90.218/" || window.location.href=="http://192.168.1.18:1024/") {
 		window.onscroll = function() {
 			if(window.pageYOffset >= 140) {
 				document.getElementById("home-header").style.backgroundColor="#EF6C00";
@@ -24,13 +24,25 @@
 		}
 	}
 	document.onreadystatechange = function (){
-		if(document.documentElement.clientWidth < 800) {
-			document.getElementById("nav").style.display="none";
-			document.getElementById("scaled-menu").style.display="";
-		}else{
-			document.getElementById("nav").style.display="";
-			document.getElementById("scaled-menu").style.display="none";
+		if(document.readyState == "complete") {
+			if(document.documentElement.clientWidth < 800) {
+				document.getElementById("nav").style.display="none";
+				document.getElementById("scaled-menu").style.display="";
+			}else{
+				document.getElementById("nav").style.display="";
+				document.getElementById("scaled-menu").style.display="none";
+			}
+			if(window.location.href.toString().search("join") != -1) {
+				if(document.documentElement.clientWidth < 500) {
+					document.getElementById("join-content-block").style.fontSize="3vw";
+					document.getElementById("join-comment").style.fontSize="2.5vw";
+				}else{
+					document.getElementById("join-content-block").style.fontSize="1.7vw";
+					document.getElementById("join-comment").style.fontSize="1vw";
+				}
+			}
 		}
+		
 	}
 	
 	
