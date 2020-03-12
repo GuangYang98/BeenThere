@@ -1,7 +1,7 @@
 <template>
 	<div style="background-color: white; font-family: arial black;">
 		<div class="home-header-background">
-			<div style="font-family: arial rounded mt bold; color: white; font-size: 2.5vw; padding-top: 20vw; padding-bottom: 20vw; filter: brightness(150%);">
+			<div style="font-family: arial rounded mt bold; color: white; font-size: 2.5vw; padding-top: 20vw; padding-bottom: 20vw;">
 				<p style="font-size: 5vw; text-shadow: 1px 1px 1px #000,-1px -1px 1px #fff;">Beenthere</p>
 				<p style="text-shadow: 1px 1px 1px #000,-1px -1px 1px #fff;">全球青年心灵互助社区</p>
 			</div>
@@ -70,7 +70,7 @@
 						<p>MIT Sandbox 基金赞助项目</p>
 					</div>
 					<div class="home-sponsor-block">
-						<img src="../assets/home/Legatum.jpeg" class="home-sponsor-image">
+						<img src="../assets/home/Legatum.jpeg" class="home-sponsor-image" style="height: 12vw;">
 						<p>MIT 社会创新发展中心赞助项目</p>
 					</div>
 					<div class="home-sponsor-block">
