@@ -6,7 +6,7 @@
 				<p style="text-shadow: 1px 1px 1px #000,-1px -1px 1px #fff;">全球青年心灵互助社区</p>
 			</div>
 		</div>
-		<div style="text-align: center; margin-top: 10vw; font-family: arial rounded mt bold; font-weight: bold;">
+		<div style="text-align: center; margin-top: 4vw; font-family: arial rounded mt bold; font-weight: bold;">
 			<v-img src="../assets/home/car.png" width="27vw" style="display: inline-block;"></v-img>
 			<!-- <img src="../assets/home/car.png" style="width: 27vw; height: auto;"> -->
 			<div style="display: inline-block; margin-left: 30px; margin-top: 10px;">
