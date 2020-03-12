@@ -34,8 +34,8 @@
 				<p style="margin-top: 3vw;">无需缴费！无需注册！无需预约！</p>
 				<p style="margin-top: 1vw;">不限时长！不限次数！匿名倾诉！</p>
 				<p style="margin-top: 3vw;">一个视频快速了解我们：</p>
-				<iframe src="//player.bilibili.com/player.html?aid=30430636&amp;cid=53100098&amp;page=1" scrolling="yes" border="1" frameborder="yes" framespacing="2" allowfullscreen="true" style="width: 88.8vw; height: 50vw; margin-top: 2vw;">
-				</iframe>
+				<!-- <iframe src="//player.bilibili.com/player.html?aid=30430636&cid=53100098&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 88.8vw; height: 50vw; margin-top: 2vw;"> </iframe> -->
+				<iframe width="1020" height="573" src="https://www.youtube.com/embed/2leb172vXYo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
 			
 			<div style="margin-top: 3vw;">
