@@ -70,7 +70,7 @@
 						<p>MIT Sandbox 基金赞助项目</p>
 					</div>
 					<div class="home-sponsor-block">
-						<img src="../assets/home/Legatum.jpeg" class="home-sponsor-image" style="height: 12vw;">
+						<img src="../assets/home/Legatum.jpeg" class="home-sponsor-image">
 						<p>MIT 社会创新发展中心赞助项目</p>
 					</div>
 					<div class="home-sponsor-block">
