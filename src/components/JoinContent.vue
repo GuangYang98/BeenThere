@@ -1,6 +1,6 @@
 <template>
 	<div style="padding-top: 140px; background-color: white;" id="join-content-block">
-		<div style="font-family: arial black; padding-left: 5vw; padding-top: 5vw;" >
+		<div class="join-words" >
 			<p>欢迎加入 BeenThere 大家庭！在这里，你可以</p>
 			<ul style="margin-left: 2.2vw;">
 				<li style="margin-top: 1vw;"><p>获得有关心理咨询的第一手知识与实践 </p></li>
@@ -17,43 +17,44 @@
 			</ul>
 			<p style="margin-top: 5vw;">请填写有效信息，提交后会有小助手与您取得联系！</p>
 		</div>
-		<div>
-			<div style="font-family: arial rounded mt bold; padding-left: 5vw; padding-top: 3vw;">
+		<div class="join-question-title">
+			<div>
 				<p>您的姓名 *</p>
 				<v-text-field style="width: 50vw;"></v-text-field>
 			</div>
 			
-			<div style="font-family: arial rounded mt bold; padding-left: 5vw; padding-top: 3vw;">
+			<div>
 				<p>您的微信ID *</p>
 				<v-text-field style="width: 50vw;"></v-text-field>
 			</div>
 			
-			<div style="font-family: arial rounded mt bold; padding-left: 5vw; padding-top: 3vw;">
+			<div>
 				<p>您的常用邮箱 *</p>
 				<v-text-field style="width: 50vw;"></v-text-field>
 			</div>
 			
-			<div style="font-family: arial rounded mt bold; padding-left: 5vw; padding-top: 3vw;">
+			<div>
 				<p>您的学校、专业，或工作单位、现任岗位 *</p>
 				<p style="color: gray; font-size: 1.5vw;" id="join-comment">为保证团队质量，我们会进行一定的背景调查</p>
 				<v-text-field style="width: 50vw;"></v-text-field>
 			</div>
 			
-			<div style="font-family: arial rounded mt bold; padding-left: 5vw; padding-top: 3vw;">
+			<div>
 				<p>请您简单介绍一下自己 *</p>
 				<v-text-field style="width: 50vw;"></v-text-field>
 			</div>
 			
-			<div style="font-family: arial rounded mt bold; padding-left: 5vw; padding-top: 3vw;">
+			<div>
 				<p>为什么希望加入 BeenThere？ *</p>
 				<v-text-field style="width: 50vw;"></v-text-field>
 			</div>
 			
-			<div style="font-family: arial rounded mt bold; padding-left: 5vw; padding-top: 1vw; padding-bottom: 3vw;">
-				<v-btn style="background-color: #FFB74D; color: white;" large>
-					提交
-				</v-btn>
-			</div>
+			
+		</div>
+		<div class="join-submit">
+			<v-btn style="background-color: #FFB74D; color: white;" large>
+				提交
+			</v-btn>
 		</div>
 	</div>
 </template>
@@ -67,4 +68,21 @@
 </script>
 
 <style>
+	.join-words{
+		font-family: arial rounded mt bold; 
+		padding-left: 5vw; 
+		padding-top: 5vw; 
+		font-weight: bold;
+	}
+	.join-question-title{
+		font-family: arial rounded mt bold; 
+		padding-left: 5vw; 
+		padding-top: 3vw;
+	}
+	.join-submit{
+		font-family: arial rounded mt bold; 
+		padding-left: 5vw; 
+		padding-top: 1vw; 
+		padding-bottom: 3vw;
+	}
 </style>

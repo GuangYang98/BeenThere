@@ -1,8 +1,7 @@
 <template>
 	<div class="header-block" id="header-block">
 		<img src="../assets/logo.png" class="header-logo" id="logo">
-		<Menu id="scaled-menu" style="float:right; 
-		margin-right: 4vw; display: none;"/>
+		<Menu id="scaled-menu" class="header-scaled-menu"/>
 		<div class="header-text-nav" id="nav" style="display: none;">
 			<a class="header-home" href="/">主页</a>
 			<a class="header-members" href="/join">Beenthere大家庭</a>
@@ -37,7 +36,7 @@
 					document.getElementById("join-content-block").style.fontSize="3vw";
 					document.getElementById("join-comment").style.fontSize="2.5vw";
 				}else{
-					document.getElementById("join-content-block").style.fontSize="1.7vw";
+					document.getElementById("join-content-block").style.fontSize="1.3vw";
 					document.getElementById("join-comment").style.fontSize="1vw";
 				}
 			}
@@ -122,5 +121,10 @@
 	.header-join:hover{
 		background-color: #ffce8f;
 		color: black;
+	}
+	.header-scaled-menu{
+		float:right;
+		margin-right: 4vw; 
+		display: none;
 	}
 </style>

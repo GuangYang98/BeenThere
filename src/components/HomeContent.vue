@@ -1,14 +1,13 @@
 <template>
-	<div style="background-color: white; font-family: arial black;">
+	<div class="home-content-wrapper">
 		<div class="home-header-background">
-			<div style="font-family: arial rounded mt bold; color: white; font-size: 2.5vw; padding-top: 20vw; padding-bottom: 12vw;">
-				<p style="font-size: 5vw; text-shadow: 1px 1px 1px #000,-1px -1px 1px #fff;">Beenthere</p>
-				<p style="text-shadow: 1px 1px 1px #000,-1px -1px 1px #fff;">全球青年心灵互助社区</p>
+			<div class="home-title">
+				<p style="font-size: 5vw;">Beenthere</p>
+				<p>全球青年心灵互助社区</p>
 			</div>
 		</div>
-		<div style="text-align: center; padding-top: 6vw; font-family: arial rounded mt bold; font-weight: bold;">
+		<div class="home-content-without-title">
 			<v-img src="../assets/home/car.png" width="27vw" style="display: inline-block;" eager></v-img>
-			<!-- <img src="../assets/home/car.png" style="width: 27vw; height: auto;"> -->
 			<div style="display: inline-block; margin-left: 30px; margin-top: 10px;">
 				<div style="font-size: 4vw;">“莫愁前路无知己，<br>BeenThere Buddy <br>在等你”</div>
 				<div style="font-size: 1.7vw; margin-top: 3vw; ">免费、匿名、即时的线上文字聊天陪伴</div>
@@ -24,7 +23,7 @@
 				<div style="margin-top: 2vw;;"><a href="https://shimo.im/sheets/XDhvpJ8QQKh6XvHq/xUGGo" class="home-shimo-link">查看值班表，好buddy不会丢！</a></div>
 			</div>
 			<v-divider class="home-divider"></v-divider>
-			<div style="text-align: center; margin-top: 3vw; font-size: 1.2vw; font-weight: bold;">
+			<div class="home-introduce">
 				<p>BeenThere</p>
 				<p style="margin-top: 1vw;">是一个源自哈佛中国学生的全球青年心灵互助社区</p>
 				<p style="margin-top: 1vw;">我们来自各地，有着不同的经历</p>
@@ -62,7 +61,7 @@
 			</div>
 			<img src="../assets/home/pink.png" style="width: 100vw; height: auto;">
 			<div style="text-align: center;">
-				<p style="color: #e07171; font-size: 4vw; margin-top: 3vw;" class="">赞助团体 | Credentials</p>
+				<p class="home-sponsor-title">赞助团体 | Credentials</p>
 				<div style="margin-top: 3vw;">
 					<div class="home-sponsor-block">
 						<img src="../assets/home/mitSandbox.png" class="home-sponsor-image">
@@ -88,7 +87,7 @@
 					</div>
 				</div>
 			</div>
-			<div style="margin-top: 5vw; font-weight: bold; font-size: 1.3vw; padding-bottom: 2vw;">
+			<div class="home-history">
 				<p>BeenThere自推出 “Buddy服务” 以来，所接咨询案例超过1000个，给87%接受我们服务的来访者带来了提升，</p>
 				<p>99%的来访者对Buddy 服务表示满意；我们也入选了哈佛、MIT一线的孵化器，大家族成员已超过100人。目前我</p>
 				<p>们已有50余位Online Buddy，TA们是来自世界各地名校的活跃志愿者，位于美国、中国、加拿大、澳大利亚、日</p>
@@ -106,6 +105,41 @@
 </script>
 
 <style>
+	.home-introduce{
+		text-align: center; 
+		margin-top: 3vw; 
+		font-size: 1.2vw; 
+		font-weight: bold;
+	}
+	.home-sponsor-title{
+		color: #e07171; 
+		font-size: 4vw; 
+		margin-top: 3vw;
+	}
+	.home-history{
+		margin-top: 5vw; 
+		font-weight: bold; 
+		font-size: 1.3vw; 
+		padding-bottom: 2vw;
+	}
+	.home-content-without-title{
+		text-align: center; 
+		padding-top: 6vw; 
+		font-family: arial rounded mt bold; 
+		font-weight: bold;
+	}
+	.home-title{
+		font-family: arial rounded mt bold; 
+		color: white; 
+		font-size: 2.5vw; 
+		padding-top: 20vw; 
+		padding-bottom: 12vw;
+		text-shadow: 1px 1px 1px #000,-1px -1px 1px #fff;
+	}
+	.home-content-wrapper{
+		background-color: white; 
+		font-family: arial black;
+	}
 	.home-header-background{
 		/* position: relative; */
 		background-size: contain;
