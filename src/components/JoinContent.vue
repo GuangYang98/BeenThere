@@ -64,8 +64,8 @@
 			document.getElementById("join-content-block").style.fontSize="3vw";
 			document.getElementById("join-comment").style.fontSize="2.5vw";
 		}else{
-			document.getElementById("join-content-block").style.fontSize="1.2vw";
-			document.getElementById("join-comment").style.fontSize="1vw";
+			document.getElementById("join-content-block").style.fontSize="1.6vw";
+			document.getElementById("join-comment").style.fontSize="1.4vw";
 		}
 	}
 	export default {
