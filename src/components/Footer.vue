@@ -25,6 +25,7 @@ export default {
     width: 100%;
     font-family: "arial rounded mt bold";
 	text-align: center;
+	font-weight: bold;
 	padding-bottom: 2vw;
 }
 .footer-qrcode{
