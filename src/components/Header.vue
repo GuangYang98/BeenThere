@@ -4,7 +4,7 @@
 			<img src="../assets/logo.png" class="header-logo" id="logo">
 		</a>
 		
-		<Menu id="scaled-menu" class="header-scaled-menu"/>
+		<Menu id="scaled-menu" class="header-scaled-menu" style="display: none;"/>
 		<div class="header-text-nav" id="nav" style="display: none;">
 			<a class="header-home" href="/">主页</a>
 			<a class="header-members" href="/join">Beenthere大家庭</a>
@@ -128,6 +128,5 @@
 	.header-scaled-menu{
 		float:right;
 		margin-right: 4vw; 
-		display: none;
 	}
 </style>
