@@ -7,7 +7,7 @@
 			</div>
 		</div>
 		<div style="text-align: center; padding-top: 6vw; font-family: arial rounded mt bold; font-weight: bold;">
-			<v-img src="../assets/home/car.png" width="27vw" style="display: inline-block;"></v-img>
+			<v-img src="../assets/home/car.png" width="27vw" style="display: inline-block;" eager></v-img>
 			<!-- <img src="../assets/home/car.png" style="width: 27vw; height: auto;"> -->
 			<div style="display: inline-block; margin-left: 30px; margin-top: 10px;">
 				<div style="font-size: 4vw;">“莫愁前路无知己，<br>BeenThere Buddy <br>在等你”</div>
