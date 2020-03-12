@@ -20,7 +20,7 @@
 				<div style="margin-top: 1.2vw; ">或许你正在经历苦恼，需要有人安慰倾听</div>
 			</div>
 			<div style="margin-top: 3vw;">
-				<div><a href="https://tawk.to/chat/5d0cf96336eab972111899f7/default?%24_tawk_sk=5dab16685380b6a7d21de80c&%24_tawk_tk=6a8b31237ab901f2a3e662e9a86cc743&v=679" class="home-tawk-to">我们聊聊吧!</a></div>
+				<div><a href="https://tawk.to/chat/5d0cf96336eab972111899f7/default" class="home-tawk-to">我们聊聊吧!</a></div>
 				<div style="margin-top: 2vw;;"><a href="https://shimo.im/sheets/XDhvpJ8QQKh6XvHq/xUGGo" class="home-shimo-link">查看值班表，好buddy不会丢！</a></div>
 			</div>
 			<v-divider class="home-divider"></v-divider>
@@ -34,12 +34,12 @@
 				<p style="margin-top: 3vw;">无需缴费！无需注册！无需预约！</p>
 				<p style="margin-top: 1vw;">不限时长！不限次数！匿名倾诉！</p>
 				<p style="margin-top: 3vw;">一个视频快速了解我们：</p>
-				<iframe src="//player.bilibili.com/player.html?aid=41061359&amp;cid=72125301&amp;page=1" scrolling="yes" border="1" frameborder="yes" framespacing="2" allowfullscreen="true" style="width: 88.8vw; height: 50vw; margin-top: 2vw;">
+				<iframe src="//player.bilibili.com/player.html?aid=30430636&amp;cid=53100098&amp;page=1" scrolling="yes" border="1" frameborder="yes" framespacing="2" allowfullscreen="true" style="width: 88.8vw; height: 50vw; margin-top: 2vw;">
 				</iframe>
 			</div>
 			
 			<div style="margin-top: 3vw;">
-				<div><a href="https://tawk.to/chat/5d0cf96336eab972111899f7/default?%24_tawk_sk=5dab16685380b6a7d21de80c&%24_tawk_tk=6a8b31237ab901f2a3e662e9a86cc743&v=679" class="home-tawk-to">我们聊聊吧!</a></div>
+				<div><a href="https://tawk.to/chat/5d0cf96336eab972111899f7/default" class="home-tawk-to">我们聊聊吧!</a></div>
 				<div style="margin-top: 2vw;;"><a href="https://shimo.im/sheets/XDhvpJ8QQKh6XvHq/xUGGo" class="home-shimo-link">查看值班表，好buddy不会丢！</a></div>
 			</div>
 			<img src="../assets/home/yellow.png" style="width: 100vw; height: auto;">
