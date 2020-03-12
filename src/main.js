@@ -11,6 +11,7 @@ Vue.use(Tawk, {
     tawkSrc: 'https://embed.tawk.to/5d0cf96336eab972111899f7/default'
 });
 
+
 new Vue({
   router,
   store,
