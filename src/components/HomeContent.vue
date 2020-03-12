@@ -2,8 +2,8 @@
 	<div style="background-color: white; font-family: arial black;">
 		<div class="home-header-background">
 			<div style="font-family: arial rounded mt bold; color: white; font-size: 2.5vw; padding-top: 20vw; padding-bottom: 20vw; filter: brightness(150%);">
-				<p style="font-size: 5vw;">Beenthere</p>
-				<p>全球青年心灵互助社区</p>
+				<p style="font-size: 5vw; text-shadow: 1px 1px 1px #000,-1px -1px 1px #fff;">Beenthere</p>
+				<p style="text-shadow: 1px 1px 1px #000,-1px -1px 1px #fff;">全球青年心灵互助社区</p>
 			</div>
 		</div>
 		<div style="text-align: center; margin-top: 10vw; font-family: arial rounded mt bold; font-weight: bold;">

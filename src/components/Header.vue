@@ -3,48 +3,37 @@
 		<img src="../assets/logo.png" class="header-logo" id="logo">
 		<Menu id="scaled-menu" style="float:right; 
 		margin-right: 4vw; display: none;"/>
-		<div class="header-text-nav" id="nav">
-			<a class="header-home" href="">主页</a>
-			<a class="header-members" href="about">Beenthere大家庭</a>
-			<a class="header-join" href="https://beentherebuddy.com/711943786725">我要加入</a>
+		<div class="header-text-nav" id="nav" style="display: none;">
+			<a class="header-home" href="/">主页</a>
+			<a class="header-members" href="/join">Beenthere大家庭</a>
+			<a class="header-join" href="/join">我要加入</a>
 		</div>
 	</div>
 </template>
 
 <script>
 	import Menu from "./Menu.vue"
-	
-	window.onload = function () {
-		if(document.documentElement.clientWidth < 800) {
-			// document.getElementById("nav").style.visibility="hidden";
-			document.getElementById("nav").style.display="none";
-			document.getElementById("scaled-menu").style.display="";
-		}else{
-			// document.getElementById("nav").style.visibility="visible";
-			document.getElementById("nav").style.display="";
-			document.getElementById("scaled-menu").style.display="none";
+	console.log(window.location.href);
+	if(window.location.href=="http://192.168.1.18:1024/") {
+		window.onscroll = function() {
+			if(window.pageYOffset >= 140) {
+				document.getElementById("home-header").style.backgroundColor="#EF6C00";
+			}else{
+				document.getElementById("home-header").style.backgroundColor="transparent";
+			}
 		}
-		
-		
-		// if(document.documentElement.clientWidth < 500) {
-		// 	// document.getElementById("nav").style.visibility="hidden";
-		// 	document.getElementById("logo").style.width="148px";
-		// 	document.getElementById("logo").style.height="50px";
-		// 	document.getElementById("logo").style.marginTop="10px";
-		// 	document.getElementById("header-block").style.height="70px";
-		// 	document.getElementById("header-block").style.lineHeight="70px";
-		// 	// document.getElementById("scaled-menu").style.marginTop="20px";
-		// } else{
-		// 	document.getElementById("logo").style.width="296px";
-		// 	document.getElementById("logo").style.height="100px";
-		// 	document.getElementById("logo").style.marginTop="20px";
-		// 	document.getElementById("header-block").style.height="140px";
-		// 	document.getElementById("header-block").style.lineHeight="140px";
-		// 	// document.getElementById("scaled-menu").style.marginTop="20px";
-		// }
-		
-		
 	}
+	
+			document.onreadystatechange = function (){
+			if(document.documentElement.clientWidth < 800) {
+				document.getElementById("nav").style.display="none";
+				document.getElementById("scaled-menu").style.display="";
+			}else{
+				document.getElementById("nav").style.display="";
+				document.getElementById("scaled-menu").style.display="none";
+			}
+			}
+	
 	
 	window.onresize = function () {
 		// console.log("宽度：" + document.documentElement.clientWidth);
@@ -57,30 +46,13 @@
 			document.getElementById("nav").style.display="";
 			document.getElementById("scaled-menu").style.display="none";
 		}
-		
-		// if(document.documentElement.clientWidth < 500) {
-		// 	// document.getElementById("nav").style.visibility="hidden";
-		// 	document.getElementById("logo").style.width="148px";
-		// 	document.getElementById("logo").style.height="50px";
-		// 	document.getElementById("logo").style.marginTop="10px";
-		// 	document.getElementById("header-block").style.height="50px";
-		// 	document.getElementById("header-block").style.lineHeight="50px";
-		// 	document.getElementById("scaled-menu").style.marginTop="20px";
-		// } else{
-		// 	document.getElementById("logo").style.width="296px";
-		// 	document.getElementById("logo").style.height="100px";
-		// 	document.getElementById("logo").style.marginTop="20px";
-		// 	document.getElementById("header-block").style.height="140px";
-		// 	document.getElementById("header-block").style.lineHeight="140px";
-		// 	// document.getElementById("scaled-menu").style.marginTop="20px";
-		// }
-		
 	}
 	export default {
 		name: "Header",
 		components:{
 			Menu,
-		}
+		},
+		
 	}
 </script>
 

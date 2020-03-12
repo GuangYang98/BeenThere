@@ -44,11 +44,11 @@ export default {
 	methods:{
 		jump: function(keyword){
 			if(keyword == "我要加入")
-				window.location.href="https://beentherebuddy.com/711943786725";
+				window.location.href="/join";
 			else if(keyword == "主页")
 				window.location.href="/";
 			else
-				window.location.href=window.location.href + "about";
+				window.location.href="/join";
 		}
 	}
 }
