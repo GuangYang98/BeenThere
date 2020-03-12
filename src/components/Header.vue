@@ -14,7 +14,7 @@
 <script>
 	import Menu from "./Menu.vue"
 	console.log(window.location.href);
-	if(window.location.href=="http://192.168.1.18:1024/") {
+	if(window.location.href=="http://47.103.90.218/") {
 		window.onscroll = function() {
 			if(window.pageYOffset >= 140) {
 				document.getElementById("home-header").style.backgroundColor="#EF6C00";
