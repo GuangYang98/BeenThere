@@ -1,6 +1,9 @@
 <template>
 	<div class="header-block" id="header-block">
-		<img src="../assets/logo.png" class="header-logo" id="logo">
+		<a href="/">
+			<img src="../assets/logo.png" class="header-logo" id="logo">
+		</a>
+		
 		<Menu id="scaled-menu" class="header-scaled-menu"/>
 		<div class="header-text-nav" id="nav" style="display: none;">
 			<a class="header-home" href="/">主页</a>
