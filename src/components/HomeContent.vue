@@ -1,19 +1,19 @@
 <template>
 	<div style="background-color: white; font-family: arial black;">
 		<div class="home-header-background">
-			<div style="font-family: arial rounded mt bold; color: white; font-size: 2.5vw; padding-top: 20vw; padding-bottom: 20vw;">
+			<div style="font-family: arial rounded mt bold; color: white; font-size: 2.5vw; padding-top: 20vw; padding-bottom: 12vw;">
 				<p style="font-size: 5vw; text-shadow: 1px 1px 1px #000,-1px -1px 1px #fff;">Beenthere</p>
 				<p style="text-shadow: 1px 1px 1px #000,-1px -1px 1px #fff;">全球青年心灵互助社区</p>
 			</div>
 		</div>
-		<div style="text-align: center; margin-top: 4vw; font-family: arial rounded mt bold; font-weight: bold;">
+		<div style="text-align: center; padding-top: 6vw; font-family: arial rounded mt bold; font-weight: bold;">
 			<v-img src="../assets/home/car.png" width="27vw" style="display: inline-block;"></v-img>
 			<!-- <img src="../assets/home/car.png" style="width: 27vw; height: auto;"> -->
 			<div style="display: inline-block; margin-left: 30px; margin-top: 10px;">
 				<div style="font-size: 4vw;">“莫愁前路无知己，<br>BeenThere Buddy <br>在等你”</div>
 				<div style="font-size: 1.7vw; margin-top: 3vw; ">免费、匿名、即时的线上文字聊天陪伴</div>
 			</div>
-			<div style="margin-top: 5vw; font-size: 1.3vw;">
+			<div style="margin-top: 4vw; font-size: 1.3vw;">
 				<div style="margin-top: 2vw; ">或许你来到新的环境，感到孤单难以适应</div>
 				<div style="margin-top: 1.2vw; ">或许你很想变得优秀，实现自己心中目标</div>
 				<div style="margin-top: 1.2vw; ">或许你面对压力焦虑，希望有人分担帮助</div>
