@@ -4,8 +4,13 @@ import router from './router'
 import store from './store'
 import vuetify from './plugins/vuetify';
 import Tawk from 'vue-tawk'
+import 'roboto-fontface/css/roboto/roboto-fontface.css'
+import '@mdi/font/css/materialdesignicons.css'
+import x2js from 'x2js'
 
+Vue.prototype.$x2js = new x2js()
 Vue.config.productionTip = false
+
 
 Vue.use(Tawk, {
     tawkSrc: 'https://embed.tawk.to/5d0cf96336eab972111899f7/default'

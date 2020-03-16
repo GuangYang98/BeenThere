@@ -7,7 +7,7 @@
 		<Menu id="scaled-menu" class="header-scaled-menu" style="display: none;"/>
 		<div class="header-text-nav" id="nav" style="display: none;">
 			<a class="header-home" href="/">主页</a>
-			<a class="header-members" href="/join">Beenthere大家庭</a>
+			<a class="header-members" href="/family">Beenthere大家庭</a>
 			<a class="header-join" href="/join">我要加入</a>
 		</div>
 	</div>
@@ -16,7 +16,7 @@
 <script>
 	import Menu from "./Menu.vue"
 	console.log(window.location.href);
-	if(window.location.href.toString().search("join") == -1 && window.location.href.toString().search("about") == -1) {
+	if(window.location.href.toString().search("join") == -1 && window.location.href.toString().search("about") == -1 && window.location.href.toString().search("family") == -1) {
 		window.onscroll = function() {
 			if(window.pageYOffset >= 140) {
 				document.getElementById("home-header").style.backgroundColor="#EF6C00";
