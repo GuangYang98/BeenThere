@@ -20,6 +20,29 @@
             Header,
             FamilyContent
         },
+		mounted: () => {
+			document.onreadystatechange = function (){
+				if(document.readyState == "complete") {
+					if(document.documentElement.clientWidth < 800) {
+						document.getElementById("nav").style.display="none";
+						document.getElementById("scaled-menu").style.display="";
+					}else{
+						document.getElementById("nav").style.display="";
+						document.getElementById("scaled-menu").style.display="none";
+					}
+				}
+			}
+			
+			window.onresize = function () {
+				if(document.documentElement.clientWidth < 800) {
+					document.getElementById("nav").style.display="none";
+					document.getElementById("scaled-menu").style.display="";
+				}else{
+					document.getElementById("nav").style.display="";
+					document.getElementById("scaled-menu").style.display="none";
+				}
+			}
+		}
 
     }
 </script>

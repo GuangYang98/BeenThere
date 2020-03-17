@@ -27,10 +27,10 @@ export default {
 		if(document.readyState == "complete") {
 			if(document.documentElement.clientWidth < 700) {
 				document.getElementById("join-content-block").style.fontSize="3vw";
-				document.getElementById("join-comment").style.fontSize="2.5vw";
+				// document.getElementById("join-comment").style.fontSize="2.5vw";
 			}else{
 				document.getElementById("join-content-block").style.fontSize="1.3vw";
-				document.getElementById("join-comment").style.fontSize="1vw";
+				// document.getElementById("join-comment").style.fontSize="1vw";
 			}
 			if(document.documentElement.clientWidth < 800) {
 				document.getElementById("nav").style.display="none";

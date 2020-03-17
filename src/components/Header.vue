@@ -30,8 +30,8 @@
 
 <style>
 	.header-block{
-		/* background-color: #2892b8; */
-		background-color: #EF6C00;
+		background-color: #2892b8;
+		/* background-color: #EF6C00; */
 		width: 100%;
 		height: 140px;
 		line-height: 140px;
@@ -87,5 +87,8 @@
 	.header-scaled-menu{
 		float:right;
 		margin-right: 4vw; 
+	}
+	a{
+		text-decoration: none;
 	}
 </style>

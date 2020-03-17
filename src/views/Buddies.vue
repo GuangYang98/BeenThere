@@ -1,5 +1,4 @@
 <template>
-
     <div>
         <Header style="position: fixed; display: inline-block;
 		z-index: 999999;" id="home-header"/>

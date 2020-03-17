@@ -10,17 +10,17 @@
 			<v-img src="../assets/home/car.png" width="27vw" style="display: inline-block;" eager></v-img>
 			<div style="display: inline-block; margin-left: 30px; margin-top: 10px;">
 				<div style="font-size: 4vw;">“莫愁前路无知己，<br>BeenThere Buddy <br>在等你”</div>
-				<div style="font-size: 1.7vw; margin-top: 3vw; ">免费、匿名、即时的线上文字聊天陪伴</div>
+				<div style="margin-top: 3vw; ">免费、匿名、即时的线上文字聊天陪伴</div>
 			</div>
 			<div style="margin-top: 4vw;">
-				<div style="margin-top: 2vw; ">或许你来到新的环境，感到孤单难以适应</div>
+				<div style="margin-top: 2vw;">或许你来到新的环境，感到孤单难以适应</div>
 				<div style="margin-top: 1.2vw; ">或许你很想变得优秀，实现自己心中目标</div>
 				<div style="margin-top: 1.2vw; ">或许你面对压力焦虑，希望有人分担帮助</div>
 				<div style="margin-top: 1.2vw; ">或许你正在经历苦恼，需要有人安慰倾听</div>
 			</div>
 			<div style="margin-top: 3vw;">
 				<div><a href="https://tawk.to/chat/5d0cf96336eab972111899f7/default" class="home-tawk-to">我们聊聊吧!</a></div>
-				<div style="margin-top: 2vw;;"><a href="https://shimo.im/sheets/XDhvpJ8QQKh6XvHq/xUGGo" class="home-shimo-link">查看值班表，好buddy不会丢！</a></div>
+				<div style="margin-top: 2vw;"><a href="https://shimo.im/sheets/XDhvpJ8QQKh6XvHq/xUGGo" class="home-shimo-link">点击查看值班表，好buddy不会丢！</a></div>
 			</div>
 			<v-divider class="home-divider"></v-divider>
 			<div class="home-introduce">
@@ -38,9 +38,9 @@
 			
 			<div style="margin-top: 3vw;">
 				<div><a href="https://tawk.to/chat/5d0cf96336eab972111899f7/default" class="home-tawk-to">我们聊聊吧!</a></div>
-				<div style="margin-top: 2vw;;"><a href="https://shimo.im/sheets/XDhvpJ8QQKh6XvHq/xUGGo" class="home-shimo-link">查看值班表，好buddy不会丢！</a></div>
+				<div style="margin-top: 2vw;"><a href="https://shimo.im/sheets/XDhvpJ8QQKh6XvHq/xUGGo" class="home-shimo-link">点击查看值班表，好buddy不会丢！</a></div>
 			</div>
-			<img src="../assets/home/yellow.png" style="width: 100vw; height: auto;">
+			<img src="../assets/home/yellow.png" style="width: 100vw; height: auto; padding-top: 3vw;">
 			
 			<div style="text-align: center; margin-top: 3vw;">
 				<p style="color: #fc6; font-size: 4vw;">来访者感悟</p>
@@ -59,7 +59,7 @@
 				</div>
 				
 			</div>
-			<img src="../assets/home/pink.png" style="width: 100vw; height: auto;">
+			<img src="../assets/home/pink.png" style="width: 100vw; height: auto; padding-top: 3vw; padding-bottom: 3vw;">
 			<div class="home-sponsor">
 				<p class="home-sponsor-title">赞助团体 | Credentials</p>
 				<div style="margin-top: 3vw;">
@@ -88,11 +88,7 @@
 				</div>
 			</div>
 			<div class="home-history">
-				<p>BeenThere自推出 “Buddy服务” 以来，所接咨询案例超过1000个，给87%接受我们服务的来访者带来了提升，
-				99%的来访者对Buddy 服务表示满意；我们也入选了哈佛、MIT一线的孵化器，大家族成员已超过100人。目前我
-				们已有50余位Online Buddy，TA们是来自世界各地名校的活跃志愿者，位于美国、中国、加拿大、澳大利亚、日
-				本、英国等国家，TA们的背景涵盖哈佛、麻省理工、斯坦福、牛津、剑桥、宾大、哥大、伯克利、清华、北大、复
-				旦等海内外名校。</p>
+				<p>BeenThere自推出 “Buddy服务” 以来，所接咨询案例超过1000个，给87%接受我们服务的来访者带来了提升，99%的来访者对Buddy 服务表示满意；我们也入选了哈佛、MIT一线的孵化器，大家族成员已超过100人。目前我们已有50余位Online Buddy，TA们是来自世界各地名校的活跃志愿者，位于美国、中国、加拿大、澳大利亚、日本、英国等国家，TA们的背景涵盖哈佛、麻省理工、斯坦福、牛津、剑桥、宾大、哥大、伯克利、清华、北大、复旦等海内外名校。</p>
 			</div>
 		</div>
 	</div>
@@ -126,9 +122,9 @@
 	.home-history{
 		padding-left: 5vw;
 		width: 90vw;
-		margin-top: 5vw; 
+		margin-top: 4vw; 
 		font-weight: bold; 
-		padding-bottom: 2vw;
+		padding-bottom: 4vw;
 		height: auto;  
 		word-wrap:break-word;  
 		word-break:break-all;
@@ -143,7 +139,7 @@
 		font-family: Roboto; 
 		color: white; 
 		font-size: 2.5vw; 
-		padding-top: 20vw; 
+		padding-top: 15vw; 
 		padding-bottom: 12vw;
 	}
 	.home-content-wrapper{
@@ -157,17 +153,24 @@
 		background-image: url(../assets/home/mask_header.jpg);
 	}
 	.home-shimo-link{
-		color: #ffce8f;
-		
+		color: #ffce8f;	
+	}
+	.home-shimo-link:hover{
+		color: coral;
 	}
 	.home-tawk-to{
-		padding: 1vw; 
+		padding-left: 2vw;
+		padding-right: 2vw;
+		padding-top: 1.5vw;
+		padding-bottom: 1.5vw;
 		border: 2px solid #ffce8f; 
 		-webkit-transition-property:background-color;
 		-webkit-transition-duration:0.5s;
 		-webkit-transition-timing-function: ease;
 		border-radius: 25px; 
-		color: #FFB74D;
+		background-color: #ffce8f;
+		color: white;
+		text-decoration: none;
 	}
 	.home-tawk-to:hover {
 		background-color: #ffce8f;

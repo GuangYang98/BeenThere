@@ -1,9 +1,8 @@
 <template>
 	<div>
-		<Header style="position: fixed; display: inline-block; 
-		z-index: 999999; background-color: #EF6C00; 
+		<Header style="float: left; background-color: transparent; 
 		-webkit-transition: .5s ease-in-out;" id="home-header"/>
-		<HomeContent style="padding-top: 139px;"/>
+		<HomeContent/>
 		<Footer style="margin-top: 2vw;"/>
 	</div>
 </template>
@@ -35,7 +34,9 @@ export default {
 				if(document.documentElement.clientWidth < 800) {
 					document.getElementById("nav").style.display="none";
 					document.getElementById("scaled-menu").style.display="";
+					// document.getElementById("home-wrapper").style.fontSize="4.3vw";
 				}else{
+					// document.getElementById("home-wrapper").style.fontSize="1.5vw";
 					document.getElementById("nav").style.display="";
 					document.getElementById("scaled-menu").style.display="none";
 				}
@@ -44,11 +45,11 @@ export default {
 
 		window.onresize = function () {
 			if(document.documentElement.clientWidth < 800) {
-				document.getElementById("home-wrapper").style.fontSize="4.3vw";
+				// document.getElementById("home-wrapper").style.fontSize="4.3vw";
 				document.getElementById("nav").style.display="none";
 				document.getElementById("scaled-menu").style.display="";
 			}else{
-				document.getElementById("home-wrapper").style.fontSize="1.5vw";
+				// document.getElementById("home-wrapper").style.fontSize="1.5vw";
 				document.getElementById("nav").style.display="";
 				document.getElementById("scaled-menu").style.display="none";
 			}

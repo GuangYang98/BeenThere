@@ -15,10 +15,10 @@
 				<li style="margin-top: 1vw;"><p> 3～5 小时（培训+服务）</p></li>
 				<li style="margin-top: 1vw;"><p>不定期撰写知识文章</p></li>
 			</ul>
-			<p style="margin-top: 5vw;">请填写有效信息，提交后会有小助手与您取得联系！</p>
+			<p style="margin-top: 5vw;">点击按钮填写报名，提交后会有小助手与您取得联系！</p>
 		</div>
 		<div class="join-question-title">
-			<div>
+			<!-- <div>
 				<p>您的姓名 *</p>
 				<v-text-field style="width: 50vw;"></v-text-field>
 			</div>
@@ -47,14 +47,15 @@
 			<div>
 				<p>为什么希望加入 BeenThere？ *</p>
 				<v-text-field style="width: 50vw;"></v-text-field>
-			</div>
+			</div> -->
 			
 			
 		</div>
 		<div class="join-submit">
-			<v-btn style="background-color: #FFB74D; color: white;" large>
+			<!-- <v-btn style="background-color: #FFB74D; color: white;" large>
 				提交
-			</v-btn>
+			</v-btn> -->
+			<div><a href="https://tawk.to/chat/5d0cf96336eab972111899f7/default" class="home-tawk-to">加入我们</a></div>
 		</div>
 	</div>
 </template>
@@ -82,6 +83,7 @@
 	.join-submit{
 		padding-left: 5vw; 
 		padding-top: 1vw; 
-		padding-bottom: 3vw;
+		padding-bottom: 5vw;
+		font-weight: bold;
 	}
 </style>
