@@ -7,7 +7,7 @@
 		<Menu id="scaled-menu" class="header-scaled-menu" style="display: none;"/>
 		<div class="header-text-nav" id="nav" style="display: none;">
 			<a class="header-home" href="/">主页</a>
-			<a class="header-members" href="/join">Beenthere大家庭</a>
+			<a class="header-members" href="/family">Beenthere大家庭</a>
 			<a class="header-join" href="/join">我要加入</a>
 		</div>
 	</div>
@@ -15,57 +15,16 @@
 
 <script>
 	import Menu from "./Menu.vue"
-	console.log(window.location.href);
-	if(window.location.href.toString().search("join") == -1 && window.location.href.toString().search("about") == -1) {
-		window.onscroll = function() {
-			if(window.pageYOffset >= 140) {
-				document.getElementById("home-header").style.backgroundColor="#EF6C00";
-			}else{
-				document.getElementById("home-header").style.backgroundColor="transparent";
-			}
-		}
-	}
-	document.onreadystatechange = function (){
-		if(document.readyState == "complete") {
-			if(document.documentElement.clientWidth < 800) {
-				document.getElementById("nav").style.display="none";
-				document.getElementById("scaled-menu").style.display="";
-			}else{
-				document.getElementById("nav").style.display="";
-				document.getElementById("scaled-menu").style.display="none";
-			}
-			if(window.location.href.toString().search("join") != -1) {
-				if(document.documentElement.clientWidth < 500) {
-					document.getElementById("join-content-block").style.fontSize="3vw";
-					document.getElementById("join-comment").style.fontSize="2.5vw";
-				}else{
-					document.getElementById("join-content-block").style.fontSize="1.3vw";
-					document.getElementById("join-comment").style.fontSize="1vw";
-				}
-			}
-		}
-		
-	}
 	
 	
-	window.onresize = function () {
-		// console.log("宽度：" + document.documentElement.clientWidth);
-		if(document.documentElement.clientWidth < 800) {
-			// document.getElementById("nav").style.visibility="hidden";
-			document.getElementById("nav").style.display="none";
-			document.getElementById("scaled-menu").style.display="";
-		}else{
-			// document.getElementById("nav").style.visibility="visible";
-			document.getElementById("nav").style.display="";
-			document.getElementById("scaled-menu").style.display="none";
-		}
-	}
+	
 	export default {
 		name: "Header",
 		components:{
 			Menu,
 		},
-		
+		mounted: () => {
+		}
 	}
 </script>
 
@@ -76,7 +35,7 @@
 		width: 100%;
 		height: 140px;
 		line-height: 140px;
-		font-family: "arial rounded mt bold";
+		font-family: Roboto;
 	}
 	.header-logo{
 		width: 296px;

@@ -23,7 +23,7 @@ export default {
 .footer-block{
     background-color: #FFB74D;
     width: 100%;
-    font-family: "arial rounded mt bold";
+    font-family: Roboto;
 	text-align: center;
 	font-weight: bold;
 	padding-bottom: 2vw;

@@ -1,8 +1,8 @@
 <template>
-	<div class="home-content-wrapper">
+	<div class="home-content-wrapper" id="home-wrapper" style="font-size: 1.5w;">
 		<div class="home-header-background">
 			<div class="home-title">
-				<p style="font-size: 5vw;">Beenthere</p>
+				<p style="font-size: 5vw;">BeenThere</p>
 				<p>全球青年心灵互助社区</p>
 			</div>
 		</div>
@@ -12,7 +12,7 @@
 				<div style="font-size: 4vw;">“莫愁前路无知己，<br>BeenThere Buddy <br>在等你”</div>
 				<div style="font-size: 1.7vw; margin-top: 3vw; ">免费、匿名、即时的线上文字聊天陪伴</div>
 			</div>
-			<div style="margin-top: 4vw; font-size: 1.3vw;">
+			<div style="margin-top: 4vw;">
 				<div style="margin-top: 2vw; ">或许你来到新的环境，感到孤单难以适应</div>
 				<div style="margin-top: 1.2vw; ">或许你很想变得优秀，实现自己心中目标</div>
 				<div style="margin-top: 1.2vw; ">或许你面对压力焦虑，希望有人分担帮助</div>
@@ -44,7 +44,7 @@
 			
 			<div style="text-align: center; margin-top: 3vw;">
 				<p style="color: #fc6; font-size: 4vw;">来访者感悟</p>
-				<div style="font-family: arial rounded mt bold;">
+				<div style="font-family: Roboto;">
 					<p class="home-quotation">“</p>
 					<p class="home-comment">BeenThere 真正做到了帮助来访者 “实现自身潜力”，Daniel 也做到了和来访者一起 “寻找方向，成</p>
 					<p class="home-comment">为更好的人”。</p>
@@ -88,11 +88,11 @@
 				</div>
 			</div>
 			<div class="home-history">
-				<p>BeenThere自推出 “Buddy服务” 以来，所接咨询案例超过1000个，给87%接受我们服务的来访者带来了提升，</p>
-				<p>99%的来访者对Buddy 服务表示满意；我们也入选了哈佛、MIT一线的孵化器，大家族成员已超过100人。目前我</p>
-				<p>们已有50余位Online Buddy，TA们是来自世界各地名校的活跃志愿者，位于美国、中国、加拿大、澳大利亚、日</p>
-				<p>本、英国等国家，TA们的背景涵盖哈佛、麻省理工、斯坦福、牛津、剑桥、宾大、哥大、伯克利、清华、北大、复</p>
-				<p>旦等海内外名校。</p>
+				<p>BeenThere自推出 “Buddy服务” 以来，所接咨询案例超过1000个，给87%接受我们服务的来访者带来了提升，
+				99%的来访者对Buddy 服务表示满意；我们也入选了哈佛、MIT一线的孵化器，大家族成员已超过100人。目前我
+				们已有50余位Online Buddy，TA们是来自世界各地名校的活跃志愿者，位于美国、中国、加拿大、澳大利亚、日
+				本、英国等国家，TA们的背景涵盖哈佛、麻省理工、斯坦福、牛津、剑桥、宾大、哥大、伯克利、清华、北大、复
+				旦等海内外名校。</p>
 			</div>
 		</div>
 	</div>
@@ -100,21 +100,22 @@
 
 <script>
 	export default {
-		name : "HomeContent"
+		name : "HomeContent",
+		mounted: () => {
+			
+		}
 	}
 </script>
 
 <style>
 	.home-sponsor{
 		text-align: center;
-		font-size: 1.4vw;
 		font-weight: bold;
-		font-family: arial rounded mt bold;
+		font-family: Roboto;
 	}
 	.home-introduce{
 		text-align: center; 
 		margin-top: 3vw; 
-		font-size: 1.2vw; 
 		font-weight: bold;
 	}
 	.home-sponsor-title{
@@ -123,42 +124,43 @@
 		margin-top: 3vw;
 	}
 	.home-history{
+		padding-left: 5vw;
+		width: 90vw;
 		margin-top: 5vw; 
 		font-weight: bold; 
-		font-size: 1.3vw; 
 		padding-bottom: 2vw;
+		height: auto;  
+		word-wrap:break-word;  
+		word-break:break-all;
 	}
 	.home-content-without-title{
 		text-align: center; 
 		padding-top: 6vw; 
-		font-family: arial rounded mt bold; 
+		font-family: Roboto; 
 		font-weight: bold;
 	}
 	.home-title{
-		font-family: arial rounded mt bold; 
+		font-family: Roboto; 
 		color: white; 
 		font-size: 2.5vw; 
 		padding-top: 20vw; 
 		padding-bottom: 12vw;
-		text-shadow: 1px 1px 1px #000,-1px -1px 1px #fff;
 	}
 	.home-content-wrapper{
 		background-color: white; 
-		font-family: arial black;
+		font-family: Roboto;
 	}
 	.home-header-background{
 		/* position: relative; */
 		background-size: contain;
 		text-align: center;
-		background-image: url(../assets/home/header.png);
+		background-image: url(../assets/home/mask_header.jpg);
 	}
 	.home-shimo-link{
 		color: #ffce8f;
-		font-size: 1.5vw;
 		
 	}
 	.home-tawk-to{
-		font-size: 1.6vw; 
 		padding: 1vw; 
 		border: 2px solid #ffce8f; 
 		-webkit-transition-property:background-color;
@@ -181,11 +183,9 @@
 		margin-top: 2vw;
 	}
 	.home-comment{
-		font-size: 1.6vw;
 	}
 	.home-comment-author{
 		color: gray;
-		font-size: 1.2vw;
 		margin-top: 2vw;
 	}
 	.home-sponsor-image{

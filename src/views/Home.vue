@@ -1,9 +1,9 @@
 <template>
 	<div>
 		<Header style="position: fixed; display: inline-block; 
-		z-index: 999999; background-color: transparent; 
+		z-index: 999999; background-color: #EF6C00; 
 		-webkit-transition: .5s ease-in-out;" id="home-header"/>
-		<HomeContent/>
+		<HomeContent style="padding-top: 139px;"/>
 		<Footer style="margin-top: 2vw;"/>
 	</div>
 </template>
@@ -29,7 +29,31 @@ export default {
 	Header,
 	HomeContent
   },
-  
+  mounted: () => {
+		document.onreadystatechange = function (){
+			if(document.readyState == "complete") {
+				if(document.documentElement.clientWidth < 800) {
+					document.getElementById("nav").style.display="none";
+					document.getElementById("scaled-menu").style.display="";
+				}else{
+					document.getElementById("nav").style.display="";
+					document.getElementById("scaled-menu").style.display="none";
+				}
+			}
+		}
+
+		window.onresize = function () {
+			if(document.documentElement.clientWidth < 800) {
+				document.getElementById("home-wrapper").style.fontSize="4.3vw";
+				document.getElementById("nav").style.display="none";
+				document.getElementById("scaled-menu").style.display="";
+			}else{
+				document.getElementById("home-wrapper").style.fontSize="1.5vw";
+				document.getElementById("nav").style.display="";
+				document.getElementById("scaled-menu").style.display="none";
+			}
+		}
+	}
 }
 </script>
 

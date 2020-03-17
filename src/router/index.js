@@ -25,6 +25,16 @@ const routes = [
 		title:'Join US - Beenthere'
 	}
   },
+  {
+      path: '/family',
+      name: 'family',
+      component: () => import('../views/Family.vue')
+  },
+  {
+      path: '/buddies/:name',
+      name: 'buddies',
+      component: () => import('../views/Buddies.vue')
+  },
  //  {
 	// path: '/joinus',
 	// name: 'JoinUs',

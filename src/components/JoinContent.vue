@@ -1,5 +1,5 @@
 <template>
-	<div style="padding-top: 140px; background-color: white;" id="join-content-block">
+	<div style="padding-top: 140px; background-color: white; font-family: Roboto;" id="join-content-block">
 		<div class="join-words" >
 			<p>欢迎加入 BeenThere 大家庭！在这里，你可以</p>
 			<ul style="margin-left: 2.2vw;">
@@ -62,25 +62,24 @@
 <script>
 	export default {
 		name: "JoinContent",
-		
+		mounted: () => {
+			
+		}
 	}
 	
 </script>
 
 <style>
 	.join-words{
-		font-family: arial rounded mt bold; 
 		padding-left: 5vw; 
 		padding-top: 5vw; 
 		font-weight: bold;
 	}
 	.join-question-title{
-		font-family: arial rounded mt bold; 
 		padding-left: 5vw; 
 		padding-top: 3vw;
 	}
 	.join-submit{
-		font-family: arial rounded mt bold; 
 		padding-left: 5vw; 
 		padding-top: 1vw; 
 		padding-bottom: 3vw;
