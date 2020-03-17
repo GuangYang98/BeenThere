@@ -1,5 +1,5 @@
 <template>
-	<div class="home-content-wrapper" id="home-wrapper" style="font-size: 1.5w;">
+	<div class="home-content-wrapper" id="home-wrapper" style="font-size: 1.7vw;">
 		<div class="home-header-background">
 			<div class="home-title">
 				<p style="font-size: 5vw;">BeenThere</p>
@@ -8,7 +8,7 @@
 		</div>
 		<div class="home-content-without-title">
 			<v-img src="../assets/home/car.png" width="27vw" style="display: inline-block;" eager></v-img>
-			<div style="display: inline-block; margin-left: 30px; margin-top: 10px;">
+			<div style="display: inline-block; margin-left: 2vw; margin-top: 1vw;">
 				<div style="font-size: 4vw;">“莫愁前路无知己，<br>BeenThere Buddy <br>在等你”</div>
 				<div style="margin-top: 3vw; ">免费、匿名、即时的线上文字聊天陪伴</div>
 			</div>
@@ -138,9 +138,9 @@
 	.home-title{
 		font-family: Roboto; 
 		color: white; 
-		font-size: 2.5vw; 
-		padding-top: 15vw; 
-		padding-bottom: 12vw;
+		font-size: 2.5vw;
+		padding-top: 20vw; 
+		padding-bottom: 15vw;
 	}
 	.home-content-wrapper{
 		background-color: white; 
