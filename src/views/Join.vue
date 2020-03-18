@@ -34,24 +34,24 @@ export default {
 					// document.getElementById("join-comment").style.fontSize="1vw";
 				}
 				if(document.documentElement.clientWidth < 1000) {
-					document.getElementById("nav").style.fontSize="3vw";
-					document.getElementById("logo").style.width="29.6vw";
-					document.getElementById("logo").style.height="10vw";
+					// document.getElementById("nav").style.fontSize="3vw";
+					// document.getElementById("logo").style.width="29.6vw";
+					// document.getElementById("logo").style.height="10vw";
 					document.getElementById("normal-header").style.height="14vw";
 					document.getElementById("normal-header").style.lineHeight="14vw";
 					document.getElementById("join-content").style.paddingTop="14vw";
-					document.getElementById("logo").style.marginTop="2vw";
+					// document.getElementById("logo").style.marginTop="2vw";
 					// document.getElementById("nav").style.marginTop="2vw";
 					// document.getElementById("home-wrapper").style.fontSize="4.3vw";
 				}else{
 					// document.getElementById("home-wrapper").style.fontSize="1.5vw";
-					document.getElementById("nav").style.fontSize="27px";
-					document.getElementById("logo").style.width="296px";
-					document.getElementById("logo").style.height="100px";
+					// document.getElementById("nav").style.fontSize="27px";
+					// document.getElementById("logo").style.width="296px";
+					// document.getElementById("logo").style.height="100px";
 					document.getElementById("normal-header").style.height="140px";
 					document.getElementById("normal-header").style.lineHeight="140px";
 					document.getElementById("join-content").style.paddingTop="140px";
-					document.getElementById("logo").style.marginTop="20px";
+					// document.getElementById("logo").style.marginTop="20px";
 					// document.getElementById("nav").style.marginTop="20px";
 				}
 			}
@@ -59,24 +59,24 @@ export default {
 	
 		window.onresize = function () {
 			if(document.documentElement.clientWidth < 1000) {
-				document.getElementById("nav").style.fontSize="3vw";
-				document.getElementById("logo").style.width="29.6vw";
-				document.getElementById("logo").style.height="10vw";
+				// document.getElementById("nav").style.fontSize="3vw";
+				// document.getElementById("logo").style.width="29.6vw";
+				// document.getElementById("logo").style.height="10vw";
 				document.getElementById("normal-header").style.height="14vw";
 				document.getElementById("normal-header").style.lineHeight="14vw";
 				document.getElementById("join-content").style.paddingTop="14vw";
-				document.getElementById("logo").style.marginTop="2vw";
+				// document.getElementById("logo").style.marginTop="2vw";
 				// document.getElementById("nav").style.marginTop="2vw";
 				// document.getElementById("home-wrapper").style.fontSize="4.3vw";
 			}else{
 				// document.getElementById("home-wrapper").style.fontSize="1.5vw";
-				document.getElementById("nav").style.fontSize="27px";
-				document.getElementById("logo").style.width="296px";
-				document.getElementById("logo").style.height="100px";
+				// document.getElementById("nav").style.fontSize="27px";
+				// document.getElementById("logo").style.width="296px";
+				// document.getElementById("logo").style.height="100px";
 				document.getElementById("normal-header").style.height="140px";
 				document.getElementById("normal-header").style.lineHeight="140px";
 				document.getElementById("join-content").style.paddingTop="140px";
-				document.getElementById("logo").style.marginTop="20px";
+				// document.getElementById("logo").style.marginTop="20px";
 				// document.getElementById("nav").style.marginTop="20px";
 			}
 		}

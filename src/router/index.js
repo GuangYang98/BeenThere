@@ -26,12 +26,12 @@ const routes = [
 	}
   },
   {
-      path: '/family',
-      name: 'family',
-      component: () => import('../views/Family.vue'),
-	  meta: {
-	  	title:'Beenthere 大家庭 - Beenthere'
-	  }
+		path: '/family',
+		name: 'family',
+		component: () => import('../views/Family.vue'),
+		meta: {
+		title:'Beenthere 大家庭 - Beenthere'
+	}
   },
   {
       path: '/buddies/:name',
