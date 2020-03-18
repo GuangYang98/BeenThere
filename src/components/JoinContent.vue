@@ -1,5 +1,5 @@
 <template>
-	<div style="padding-top: 140px; background-color: white; font-family: Roboto;" id="join-content-block">
+	<div style="background-color: white; font-family: Roboto;">
 		<div class="join-words" >
 			<p>欢迎加入 BeenThere 大家庭！在这里，你可以</p>
 			<ul style="margin-left: 2.2vw;">
