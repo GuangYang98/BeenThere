@@ -1,11 +1,18 @@
 <template>
 	<div class="home-content-wrapper" id="home-wrapper" style="font-size: 1.7vw;">
-		<div class="home-header-background">
-			<div class="home-title">
+		<div v-if="getWidth() > 700" class="home-header-background-desktop">
+			<div class="home-title" id="home-title">
 				<p style="font-size: 5vw;">BeenThere</p>
 				<p>全球青年心灵互助社区</p>
 			</div>
 		</div>
+		<div v-else class="home-header-background-mobile">
+			<div class="home-title" style="padding-top: 25vw; padding-bottom: 20vw;">
+				<p style="font-size: 5vw;">BeenThere</p>
+				<p>全球青年心灵互助社区</p>
+			</div>
+		</div>
+		
 		<div class="home-content-without-title">
 			<v-img src="../assets/home/car.png" width="27vw" style="display: inline-block;" eager></v-img>
 			<div style="display: inline-block; margin-left: 2vw; margin-top: 1vw;">
@@ -97,8 +104,10 @@
 <script>
 	export default {
 		name : "HomeContent",
-		mounted: () => {
-			
+		methods:{
+			getWidth(){
+				return document.documentElement.clientWidth;
+			}
 		}
 	}
 </script>
@@ -146,11 +155,17 @@
 		background-color: white; 
 		font-family: Roboto;
 	}
-	.home-header-background{
+	.home-header-background-desktop{
 		/* position: relative; */
 		background-size: contain;
 		text-align: center;
 		background-image: url(../assets/home/mask_header.jpg);
+	}
+	.home-header-background-mobile{
+		/* position: relative; */
+		background-size: contain;
+		text-align: center;
+		background-image: url(../assets/home/cutHeader.png);
 	}
 	.home-shimo-link{
 		color: #ffce8f;	

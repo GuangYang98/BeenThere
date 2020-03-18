@@ -2,7 +2,7 @@
     <div>
         <Header style="position: fixed; display: inline-block;
 		z-index: 999999;" id="family-header"/>
-        <FamilyContent style="padding-top: 5vw;"/>
+        <FamilyContent style="padding-top: 4.5vw;"/>
         <Footer style="margin-top: 2vw;"/>
     </div>
 </template>
@@ -23,7 +23,7 @@
 		mounted: () => {
 				document.onreadystatechange = function (){
 					if(document.readyState == "complete") {
-						if(document.documentElement.clientWidth < 800) {
+						if(document.documentElement.clientWidth < 1000) {
 							document.getElementById("nav").style.fontSize="3vw";
 							document.getElementById("logo").style.width="29.6vw";
 							document.getElementById("logo").style.height="10vw";
@@ -46,7 +46,7 @@
 				}
 		
 				window.onresize = function () {
-					if(document.documentElement.clientWidth < 800) {
+					if(document.documentElement.clientWidth < 1000) {
 						document.getElementById("nav").style.fontSize="3vw";
 						document.getElementById("logo").style.width="29.6vw";
 						document.getElementById("logo").style.height="10vw";

@@ -33,15 +33,13 @@ export default {
   mounted: () => {
 		document.onreadystatechange = function (){
 			if(document.readyState == "complete") {
-				if(document.documentElement.clientWidth < 800) {
+				if(document.documentElement.clientWidth < 1000) {
 					document.getElementById("nav").style.fontSize="3vw";
 					document.getElementById("logo").style.width="29.6vw";
 					document.getElementById("logo").style.height="10vw";
 					document.getElementById("home-header").style.height="14vw";
 					document.getElementById("home-header").style.lineHeight="14vw";
 					document.getElementById("logo").style.marginTop="2vw";
-					// document.getElementById("nav").style.marginTop="2vw";
-					// document.getElementById("home-wrapper").style.fontSize="4.3vw";
 				}else{
 					// document.getElementById("home-wrapper").style.fontSize="1.5vw";
 					document.getElementById("nav").style.fontSize="27px";
@@ -50,13 +48,12 @@ export default {
 					document.getElementById("home-header").style.height="140px";
 					document.getElementById("home-header").style.lineHeight="140px";
 					document.getElementById("logo").style.marginTop="20px";
-					// document.getElementById("nav").style.marginTop="20px";
 				}
 			}
 		}
 
 		window.onresize = function () {
-			if(document.documentElement.clientWidth < 800) {
+			if(document.documentElement.clientWidth < 1000) {
 				document.getElementById("nav").style.fontSize="3vw";
 				document.getElementById("logo").style.width="29.6vw";
 				document.getElementById("logo").style.height="10vw";

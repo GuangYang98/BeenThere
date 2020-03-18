@@ -33,7 +33,7 @@ export default {
 					document.getElementById("join-content").style.fontSize="1.3vw";
 					// document.getElementById("join-comment").style.fontSize="1vw";
 				}
-				if(document.documentElement.clientWidth < 800) {
+				if(document.documentElement.clientWidth < 1000) {
 					document.getElementById("nav").style.fontSize="3vw";
 					document.getElementById("logo").style.width="29.6vw";
 					document.getElementById("logo").style.height="10vw";
@@ -58,7 +58,7 @@ export default {
 		}
 	
 		window.onresize = function () {
-			if(document.documentElement.clientWidth < 800) {
+			if(document.documentElement.clientWidth < 1000) {
 				document.getElementById("nav").style.fontSize="3vw";
 				document.getElementById("logo").style.width="29.6vw";
 				document.getElementById("logo").style.height="10vw";

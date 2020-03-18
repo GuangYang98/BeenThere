@@ -13,7 +13,7 @@
             </div>
         </div>
         <v-col :offset-md="2" :md="8" :offset-xs="1" :xs="10">
-        <div class="middle">
+        <div class="middle" style="margin-top: 0vw;">
             <v-img src="../assets/family/2.png" style="display: inline-block; width:100%; margin:0 auto"   eager></v-img></div>
         <div class="middle" style="height: 45vw">
             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/2leb172vXYo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; " allowfullscreen></iframe>
@@ -45,15 +45,15 @@
         <br>
 
         <div class="middle">
-            <h2>点击头像查看我们的故事</h2>
+            <h2>Our Buddies</h2>
             <v-container>
                 <v-row v-for="n in (result.length/3)" :key="n" no-gutters>
                     <v-col cols="4" v-for="i in result.slice(n*3-3, n*3-3+((result.length-n*3+3 >= 3)?3:result.length-n*3+3))" :key="i.id">
                         <div class="picture">
-                            <a :href="i.url"><v-img :src="i.picLink" style="display: inline-block;" eager></v-img></a>
+                            <p><v-img :src="i.picLink" style="display: inline-block;" eager></v-img></p>
 
                             <div style="text-align: center;">
-                                <a :href="i.url" class="buddyTitle"><b>{{i.title}}</b></a>
+                                <p class="buddyTitle"><b>{{i.title}}</b></p>
                             </div>
                                 <div style="text-align: center" v-html="i.intro"></div>
                         </div>
@@ -84,7 +84,7 @@
         methods: {
             getBuddy() {
                 let _self = this;
-                axios.get(`/beenthere.xml`).then(function(res) {
+                axios.get('/beenthere.xml').then(function(res) {
                     var xmlList = JSON.parse(JSON.stringify(_self.$x2js.xml2js(res.data)))
                     console.log(xmlList);
                      _self.result = [];
@@ -119,7 +119,7 @@
     .family-content-wrapper{
         background-color: white;
         position: relative;
-        top: 0px;
+        padding-top: 3vw;
     }
 
     .page-content{
