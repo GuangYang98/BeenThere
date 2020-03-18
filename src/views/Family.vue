@@ -2,6 +2,7 @@
     <div>
         <Header style="position: fixed; display: inline-block;
 		z-index: 999999;" id="home-header"/>
+        <div style="height: 140px;"></div>
         <FamilyContent/>
         <Footer style="margin-top: 2vw;"/>
     </div>

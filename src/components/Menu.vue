@@ -48,7 +48,7 @@ export default {
 			else if(keyword == "主页")
 				window.location.href="/";
 			else
-				window.location.href="/join";
+				window.location.href="/family";
 		}
 	}
 }

@@ -1,7 +1,8 @@
 <template>
     <div class="buddy-content-wrapper">
         <div style="height: 545px; width: 100%; overflow: hidden; ">
-            <v-img :src="pic" style="position: relative; top:-125%"></v-img>
+
+            <v-img :src="piclink" style="position: relative; top:-125%"></v-img>
         </div>
             <div class="post-date">
                 <h4 >{{date}}</h4>
@@ -26,6 +27,7 @@
                 who: -1,
                 cont:"",
                 pic:"",
+                piclink:"",
                 date:"",
                 title:"",
             }
@@ -47,6 +49,7 @@
                     if (_self.who !== -1) {
                         _self.cont = t[i].encoded[0]['__cdata'];
                         _self.pic = t[i+1].link;
+                        _self.piclink = require('../assets/family/'+t[i+1].link);
                         _self.date=t[i+1].pubDate.slice(0,16);
                         _self.title=t[i].title;
                     } else {
@@ -80,9 +83,9 @@
         font-family: Roboto;
         z-index: 5;
         position: absolute;
-        top: 254px;
+        top: 25%;
         font-weight: 500;
-        font-size: 35px;
+        font-size: 25%;
         letter-spacing: 2px;
         text-align: center;
         color: #fff;
@@ -135,7 +138,7 @@
         box-sizing: border-box;
         width: auto;
         margin: auto;
-        max-width: 1020px;
+        max-width: 50%;
         padding: 96px 32px;
         -moz-osx-font-smoothing: auto;
         -webkit-font-smoothing: subpixel-antialiased;
