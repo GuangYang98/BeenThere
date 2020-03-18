@@ -18,7 +18,7 @@
         components: {
             Footer,
             Header,
-            FamilyContent
+            FamilyContent,
         },
 		mounted: () => {
 				document.onreadystatechange = function (){

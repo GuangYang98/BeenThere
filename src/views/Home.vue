@@ -16,13 +16,6 @@ import Footer from '../components/Footer.vue'
 import Header from '../components/Header.vue'
 import HomeContent from '../components/HomeContent.vue'
 
-window.onscroll = function() {
-	if(window.pageYOffset >= 140) {
-		document.getElementById("home-header").style.backgroundColor="#2892b8";
-	}else{
-		document.getElementById("home-header").style.backgroundColor="transparent";
-	}
-}
 export default {
   name: 'Home',
   components: {
@@ -31,6 +24,13 @@ export default {
 	HomeContent
   },
   mounted: () => {
+		window.onscroll = function() {
+			if(window.pageYOffset >= 140) {
+				document.getElementById("home-header").style.backgroundColor="#2892b8";
+			}else{
+				document.getElementById("home-header").style.backgroundColor="transparent";
+			}
+		}
 		document.onreadystatechange = function (){
 			if(document.readyState == "complete") {
 				if(document.documentElement.clientWidth < 1000) {

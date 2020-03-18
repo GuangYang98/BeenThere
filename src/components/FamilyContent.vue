@@ -16,7 +16,7 @@
         <div class="middle" style="margin-top: 0vw;">
             <v-img src="../assets/family/2.png" style="display: inline-block; width:100%; margin:0 auto"   eager></v-img></div>
         <div class="middle" style="height: 45vw">
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/2leb172vXYo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; " allowfullscreen></iframe>
+            <iframe width="100%" height="100%" src="//player.bilibili.com/player.html?aid=30430636&cid=53100098&page=1&high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
         </div>
 
         <div class="middle" style="margin-top: -5%">
