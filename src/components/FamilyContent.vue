@@ -84,22 +84,22 @@
         methods: {
             getBuddy() {
                 let _self = this;
-                axios.get('/beenthere.xml').then(function(res) {
+                axios.get('beenthere.xml').then(function(res) {
                     var xmlList = JSON.parse(JSON.stringify(_self.$x2js.xml2js(res.data)))
-                    console.log(xmlList);
+                    // console.log(xmlList);
                      _self.result = [];
                     let t = xmlList.rss.channel.item;
                     for (var i = 0; i< 41; i+=2) {
                         var item = new Map;
                         item['title'] = t[i].title;
                         item['url'] = t[i].link
-                        item['encoded'] = t[i].encoded[0]['__cdata'];
+                        // item['encoded'] = t[i].encoded[0]['__cdata'];
                         item['intro'] = t[i].encoded[1]['__cdata'];
                         item['picLink'] = require('../assets/family/'+t[i+1].link);
                         _self.result.push(item)
-                        console.log(_self.result)
+                        // console.log(_self.result)
                     }
-                    console.log(_self.result);
+                    // console.log(_self.result);
                 })
                     .catch(function(err) {
                         console.log(err)

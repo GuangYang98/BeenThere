@@ -1,29 +1,43 @@
 <template>
 	<div class="header-block" id="header-block">
-		<a href="/">
-			<img src="../assets/logo.png" class="header-logo" id="logo" style="width: 296px; height: 100px;">
-		</a>
-		
-		<Menu id="scaled-menu" class="header-scaled-menu" style="display: none;"/>
-		<div class="header-text-nav" id="nav" style="font-size: 27px;">
-			<a class="header-home" href="/">主页</a>
-			<a class="header-members" href="/family">Beenthere大家庭</a>
-			<a class="header-join" href="/join">我要加入</a>
+		<div v-if="getWidth()>800">
+			<a href="/">
+				<img src="../assets/logo.png" class="header-logo" id="logo" style="width: 296px; height: 100px; margin-top: 20px;">
+			</a>
+			<div class="header-text-nav" id="nav" style="font-size: 27px;">
+				<a class="header-home" href="/">主页</a>
+				<a class="header-members" href="/family">Beenthere大家庭</a>
+				<a class="header-join" href="/join">我要加入</a>
+			</div>
 		</div>
+		<div v-else>
+			<a href="/">
+				<img src="../assets/logo.png" class="header-logo" id="logo" style="width: 29.6vw; height: 10vw; margin-top: 2vw;">
+			</a>
+			<div class="header-text-nav" id="nav" style="font-size: 3vw;">
+				<a class="header-home" href="/">主页</a>
+				<a class="header-members" href="/family">Beenthere大家庭</a>
+				<a class="header-join" href="/join">我要加入</a>
+			</div>
+		</div>
+
 	</div>
 </template>
 
 <script>
-	import Menu from "./Menu.vue"
+	// import Menu from "./Menu.vue"
 	
 	
 	
 	export default {
 		name: "Header",
 		components:{
-			Menu,
+			// Menu,
 		},
-		mounted: () => {
+		methods: {
+			getWidth(){
+				return document.documentElement.clientWidth;
+			}
 		}
 	}
 </script>
