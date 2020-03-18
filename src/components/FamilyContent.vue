@@ -1,9 +1,9 @@
 <template>
     <div class="family-content-wrapper">
-        <v-col :offset-md="3" :md="6" :offset-xs="1" :xs="10">
+
         <div class="page-content">
-            <div style="margin-bottom: 40%; margin-top: 10%;" >
-                <v-img src="../assets/home/car.png" width="25vw" style="display: inline-block; float: left" eager></v-img>
+            <div style="margin-top: 10%; " >
+                <v-img src="../assets/home/car.png" width="27vw" style="display: inline-block;" eager></v-img>
                 <div class="family-title">
                     <strong>BeenThere Online <br>Buddy们</strong>
                     <p><br>我们来自各地，有着不同的经历<br><br>
@@ -12,9 +12,10 @@
                 </div>
             </div>
         </div>
+        <v-col :offset-md="2" :md="8" :offset-xs="1" :xs="10">
         <div class="middle">
             <v-img src="../assets/family/2.png" style="display: inline-block; width:100%; margin:0 auto"   eager></v-img></div>
-        <div class="middle" style="height: 35vw">
+        <div class="middle" style="height: 45vw">
             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/2leb172vXYo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; " allowfullscreen></iframe>
         </div>
 
@@ -23,22 +24,22 @@
         </div>
 
         <div class="middle">
-            <v-container style="height: 25vw">
+            <v-container style="height: 30vw">
                 <v-col cols="4"  style="float: left;">
-                    <v-row no-gutters><v-img src="../assets/family/IMG_9858.jpg" style="display: inline-block; height: 25vw" eager></v-img></v-row>
+                    <v-row no-gutters><v-img src="../assets/family/IMG_9858.jpg" style="display: inline-block; height: 30vw" eager></v-img></v-row>
                 </v-col>
                 <v-col cols="4"  style="float: left;">
-                    <v-row no-gutters style="margin-bottom: 1vw"><v-img src="../assets/family/IMG_9859.jpg" style="display: inline-block; height: 12vw" eager></v-img></v-row>
-                    <v-row no-gutters><v-img src="../assets/family/IMG_9865.jpg" style="display: inline-block; height: 12vw" eager></v-img></v-row>
+                    <v-row no-gutters style="margin-bottom: 1vw"><v-img src="../assets/family/IMG_9859.jpg" style="display: inline-block; height: 14.5vw" eager></v-img></v-row>
+                    <v-row no-gutters><v-img src="../assets/family/IMG_9865.jpg" style="display: inline-block; height: 14.5vw" eager></v-img></v-row>
                 </v-col>
                 <v-col cols="4"  style="float: left;">
-                    <v-row no-gutters><v-img src="../assets/family/IMG_9866.jpg" style="display: inline-block; height: 25vw;" eager></v-img></v-row>
+                    <v-row no-gutters><v-img src="../assets/family/IMG_9866.jpg" style="display: inline-block; height: 30vw;" eager></v-img></v-row>
                 </v-col>
             </v-container>
-            <v-container style="height: 12vw">
-                <v-col cols="4" style="float: left;"><v-img src="../assets/family/IMG_9860.jpg" style="display: inline-block; height: 12vw" eager></v-img></v-col>
-                <v-col cols="4" style="float: left;"><v-img src="../assets/family/IMG_9863.jpg" style="display: inline-block; height: 12vw" eager></v-img></v-col>
-                <v-col cols="4" style="float: left;"><v-img src="../assets/family/IMG_9861.jpg" style="display: inline-block; height: 12vw" eager></v-img></v-col>
+            <v-container style="height: 15vw">
+                <v-col cols="4" style="float: left;"><v-img src="../assets/family/IMG_9860.jpg" style="display: inline-block; height: 15vw" eager></v-img></v-col>
+                <v-col cols="4" style="float: left;"><v-img src="../assets/family/IMG_9863.jpg" style="display: inline-block; height: 15vw" eager></v-img></v-col>
+                <v-col cols="4" style="float: left;"><v-img src="../assets/family/IMG_9861.jpg" style="display: inline-block; height: 15vw" eager></v-img></v-col>
             </v-container>
         </div>
         <br>
@@ -54,9 +55,7 @@
                             <div style="text-align: center;">
                                 <a :href="i.url" class="buddyTitle"><b>{{i.title}}</b></a>
                             </div>
-                            <div id="introduction">
                                 <div style="text-align: center" v-html="i.intro"></div>
-                            </div>
                         </div>
                     </v-col>
                 </v-row>
@@ -124,14 +123,17 @@
     }
 
     .page-content{
+        text-align: center;
         font-family: Roboto;
         max-width: 75vw;
         margin: 0 auto;
         padding: 5% 0;
     }
     .family-title{
+        text-align: left;
+        display: inline-block;
         font-family: Roboto;
-        float: right;
+        margin-left: 5vw;
     }
     .family-title strong{
         font-size: 2.6vw;
@@ -148,7 +150,7 @@
         float: left;
         margin-bottom: 5vw;
         margin-right: 50%;
-        font-size: 0.8vw;
+        font-size: 1vw;
         clear:left;
         overflow: hidden;
     }
@@ -156,7 +158,7 @@
         font-family: Roboto;
         font-style: normal;
         font-weight: 700;
-        font-size: 1vw;
+        font-size: 1.5vw;
         text-transform: uppercase;
         line-height: 1.2em;
     }

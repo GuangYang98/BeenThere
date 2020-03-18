@@ -129,7 +129,7 @@
 		padding-bottom: 2vw;
 	}
 	.home-content-without-title{
-		text-align: center; 
+		text-align: center;
 		padding-top: 6vw; 
 		font-family: arial rounded mt bold; 
 		font-weight: bold;
