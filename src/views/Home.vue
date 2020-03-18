@@ -33,7 +33,7 @@ export default {
 		}
 		document.onreadystatechange = function (){
 			if(document.readyState == "complete") {
-				if(document.documentElement.clientWidth < 1000) {
+				if(document.documentElement.clientWidth < 800) {
 					// document.getElementById("nav").style.fontSize="3vw";
 					// document.getElementById("logo").style.width="29.6vw";
 					// document.getElementById("logo").style.height="10vw";
@@ -53,7 +53,7 @@ export default {
 		}
 
 		window.onresize = function () {
-			if(document.documentElement.clientWidth < 1000) {
+			if(document.documentElement.clientWidth < 800) {
 				// document.getElementById("nav").style.fontSize="3vw";
 				// document.getElementById("logo").style.width="29.6vw";
 				// document.getElementById("logo").style.height="10vw";
