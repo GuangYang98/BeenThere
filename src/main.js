@@ -4,8 +4,10 @@ import router from './router'
 import store from './store'
 import vuetify from './plugins/vuetify';
 import Tawk from 'vue-tawk'
+import x2js from 'x2js'
 
 Vue.config.productionTip = false
+Vue.prototype.$x2js = new x2js()
 
 Vue.use(Tawk, {
     tawkSrc: 'https://embed.tawk.to/5d0cf96336eab972111899f7/default'
