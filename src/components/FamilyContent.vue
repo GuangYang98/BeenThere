@@ -16,7 +16,8 @@
         <div class="middle" style="margin-top: 0vw;">
             <v-img src="../assets/family/2.png" style="display: inline-block; width:100%; margin:0 auto"   eager></v-img></div>
         <div class="middle" style="height: 45vw">
-            <iframe width="100%" height="100%" src="//player.bilibili.com/player.html?aid=97966740&cid=167232948&page=1&high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+            <iframe width="100%" height="100%" src="//player.bilibili.com/player.html?aid=98269056&cid=167750424&page=1&high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+			
         </div>
 
         <div class="middle" style="margin-top: -5%">
@@ -45,7 +46,7 @@
         <br>
 
         <div class="middle">
-            <h2>Our Buddies</h2>
+            <h2>我们的志愿者们</h2>
             <v-container>
                 <v-row v-for="n in (result.length/3)" :key="n" no-gutters>
                     <v-col cols="4" v-for="i in result.slice(n*3-3, n*3-3+((result.length-n*3+3 >= 3)?3:result.length-n*3+3))" :key="i.id">

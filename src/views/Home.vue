@@ -3,7 +3,7 @@
 		<Header style="position: fixed; display: inline-block; 
 		z-index: 999999; background-color: transparent; 
 		-webkit-transition: .5s ease-in-out; line-height: 140px; height: 140px;" id="home-header"/>
-		<HomeContent/>
+		<HomeContent id="home-headers"/>
 		<Footer style="margin-top: 2vw;"/>
 	</div>
 </template>
