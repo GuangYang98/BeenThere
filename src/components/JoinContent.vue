@@ -17,8 +17,8 @@
 			</ul>
 			<p style="margin-top: 5vw;">点击按钮填写报名，提交后会有小助手与您取得联系！</p>
 		</div>
-		<div class="join-question-title">
-			<!-- <div>
+		<!-- <div class="join-question-title">
+			<div>
 				<p>您的姓名 *</p>
 				<v-text-field style="width: 50vw;"></v-text-field>
 			</div>
@@ -47,22 +47,21 @@
 			<div>
 				<p>为什么希望加入 BeenThere？ *</p>
 				<v-text-field style="width: 50vw;"></v-text-field>
-			</div> -->
+			</div>
 			
 			
-		</div>
-		<div class="join-submit">
-			<!-- <v-btn style="background-color: #FFB74D; color: white;" large>
-				提交
-			</v-btn> -->
-			<div><a href="https://tawk.to/chat/5d0cf96336eab972111899f7/default" class="home-tawk-to">加入我们</a></div>
-		</div>
+		</div> -->
+		<Menu style="padding-left: 5vw; width: 5vw; margin-top: 3vw; padding-bottom: 3vw;"/>
 	</div>
 </template>
 
 <script>
+	import Menu from './Menu.vue'
 	export default {
 		name: "JoinContent",
+		components:{
+			Menu,
+		},
 		mounted: () => {
 			
 		}
@@ -80,10 +79,5 @@
 		padding-left: 5vw; 
 		padding-top: 3vw;
 	}
-	.join-submit{
-		padding-left: 5vw; 
-		padding-top: 1vw; 
-		padding-bottom: 5vw;
-		font-weight: bold;
-	}
+	
 </style>

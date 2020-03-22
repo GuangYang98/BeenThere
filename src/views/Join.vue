@@ -4,7 +4,7 @@
 		z-index: 999999; 
 		-webkit-transition: .5s ease-in-out;" id="normal-header"/>
 		<JoinContent id="join-content"/>
-		<Footer style="margin-top: 2vw;"/>
+		<Footer style="padding-top: 5vw;"/>
 	</div>
 </template>
 

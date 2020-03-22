@@ -40,12 +40,16 @@
 				<p style="margin-top: 3vw;">无需缴费！无需注册！无需预约！</p>
 				<p style="margin-top: 1vw;">不限时长！不限次数！匿名倾诉！</p>
 				<p style="margin-top: 3vw;">一个视频快速了解我们：</p>
-				<iframe src="//player.bilibili.com/player.html?aid=30430636&cid=53100098&page=1&high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 84vw; height: 47vw; margin-top: 2vw;"> </iframe>
+				<iframe src="//player.bilibili.com/player.html?aid=97966740&cid=167232948&page=1&high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 71.48vw; height: 40vw; margin-top: 2vw;"> </iframe>
+				<!-- <iframe src="//player.bilibili.com/player.html?aid=97966740&cid=167232948&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe> -->
 			</div>
 			
 			<div style="margin-top: 3vw;">
 				<div><a href="https://tawk.to/chat/5d0cf96336eab972111899f7/default" class="home-tawk-to">我们聊聊吧!</a></div>
 				<div style="margin-top: 2vw;"><a href="https://shimo.im/sheets/XDhvpJ8QQKh6XvHq/xUGGo" class="home-shimo-link">点击查看值班表，好buddy不会丢！</a></div>
+				<div class="home-history" style="font-style:italic;">
+					<p>BeenThere 是一个由志愿者组成的互助倾听组织，不提供专业的医疗服务，如有需要，建议您接受相关专业服务，或是拨打网站上免费专业的<a href="https://beentherebuddy.com/urgsituation" style="text-decoration: underline;">[心理支持服务热线]</a>。我们在意您的安全和健康，很希望帮到您! </p>
+				</div>
 			</div>
 			<img src="../assets/home/yellow.png" style="width: 100vw; height: auto; padding-top: 3vw;">
 			
