@@ -1,9 +1,8 @@
 <template>
 	<div>
-		<Header style="position: fixed; display: block; 
-		z-index: 999999; 
-		-webkit-transition: .5s ease-in-out;" id="normal-header"/>
+		<Header style="position: fixed; display: block; z-index: 999999; -webkit-transition: .5s ease-in-out;" id="normal-header"/>
 		<JoinContent id="join-content"/>
+		<ThanksLetter/>
 		<Footer style="padding-top: 5vw;"/>
 	</div>
 </template>
@@ -14,13 +13,15 @@
 import Footer from '../components/Footer.vue'
 import Header from '../components/Header.vue'
 import JoinContent from '../components/JoinContent.vue'
+// import ThanksLetter from '../components/ThanksLetter.vue'
 
 export default {
   name: 'Join',
   components: {
     Footer,
 	Header,
-	JoinContent
+	JoinContent,
+	// ThanksLetter
   },
   mounted: () => {
 	
