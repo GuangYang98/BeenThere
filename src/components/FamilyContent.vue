@@ -16,7 +16,7 @@
         <div class="middle" style="margin-top: 0vw;">
             <v-img src="../assets/family/2.png" style="display: inline-block; width:100%; margin:0 auto"   eager></v-img></div>
         <div class="middle" style="height: 45vw">
-            <iframe width="100%" height="100%" src="//player.bilibili.com/player.html?aid=98269056&cid=167750424&page=1&high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+            <iframe width="100%" height="100%" src="https://player.bilibili.com/player.html?aid=98269056&cid=167750424&page=1&high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
 			
         </div>
 
@@ -74,7 +74,7 @@
 </template>
 
 <script>
-    import axios from 'axios';
+    import axios from "axios";
     export default {
         name: "FamilyContent",
         data() {
@@ -85,18 +85,18 @@
         methods: {
             getBuddy() {
                 let _self = this;
-                axios.get('beenthere.xml').then(function(res) {
+                axios.get("beenthere.xml").then(function(res) {
                     var xmlList = JSON.parse(JSON.stringify(_self.$x2js.xml2js(res.data)))
                     // console.log(xmlList);
                      _self.result = [];
                     let t = xmlList.rss.channel.item;
                     for (var i = 0; i< 41; i+=2) {
                         var item = new Map;
-                        item['title'] = t[i].title;
-                        item['url'] = t[i].link
-                        // item['encoded'] = t[i].encoded[0]['__cdata'];
-                        item['intro'] = t[i].encoded[1]['__cdata'];
-                        item['picLink'] = require('../assets/family/'+t[i+1].link);
+                        item["title"] = t[i].title;
+                        item["url"] = t[i].link
+                        // item["encoded"] = t[i].encoded[0]["__cdata"];
+                        item["intro"] = t[i].encoded[1]["__cdata"];
+                        item["picLink"] = require("../assets/family/"+t[i+1].link);
                         _self.result.push(item)
                         // console.log(_self.result)
                     }

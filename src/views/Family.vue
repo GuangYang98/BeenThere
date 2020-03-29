@@ -3,19 +3,19 @@
         <Header style="position: fixed; display: inline-block;
 		z-index: 999999;" id="family-header"/>
         <FamilyContent style="padding-top: 4.5vw;"/>
-		<ThanksLetter/>
+		<!-- <ThanksLetter/> -->
         <Footer style="margin-top: 2vw;"/>
     </div>
 </template>
 
 <script>
 
-    import Footer from '../components/Footer.vue'
-    import Header from '../components/Header.vue'
-    import FamilyContent from '../components/FamilyContent.vue'
-	// import ThanksLetter from '../components/ThanksLetter.vue'
+    import Footer from "../components/Footer.vue"
+    import Header from "../components/Header.vue"
+    import FamilyContent from "../components/FamilyContent.vue"
+	// import ThanksLetter from "../components/ThanksLetter.vue"
     export default {
-        name: 'family',
+        name: "family",
         components: {
             Footer,
             Header,

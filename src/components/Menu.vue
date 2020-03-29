@@ -40,9 +40,9 @@ export default {
 	name: "Menu",
 	data: () => ({
 		items: [
-		{ title: '校园大使' },
-		{ title: '实习生' },
-		{ title: 'Online Buddy' },
+		{ title: "校园大使" },
+		{ title: "实习生" },
+		{ title: "Online Buddy" },
 	],
 	}),
 	methods:{

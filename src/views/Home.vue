@@ -11,13 +11,13 @@
 
 <script>
 // @ is an alias to /src
-// import HelloWorld from '@/components/HelloWorld.vue'
-import Footer from '../components/Footer.vue'
-import Header from '../components/Header.vue'
-import HomeContent from '../components/HomeContent.vue'
+// import HelloWorld from "@/components/HelloWorld.vue"
+import Footer from "../components/Footer.vue"
+import Header from "../components/Header.vue"
+import HomeContent from "../components/HomeContent.vue"
 
 export default {
-  name: 'Home',
+  name: "Home",
   components: {
     Footer,
 	Header,

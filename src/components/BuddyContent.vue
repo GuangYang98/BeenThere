@@ -18,7 +18,7 @@
 </template>
 
 <script>
-    import axios from 'axios';
+    import axios from "axios";
     export default {
         name: "BuddyContent",
         data() {
@@ -45,7 +45,7 @@
                         }
                     }
                     if (_self.who !== -1) {
-                        _self.cont = t[i].encoded[0]['__cdata'];
+                        _self.cont = t[i].encoded[0]["__cdata"];
                         _self.pic = t[i+1].link;
                         _self.date=t[i+1].pubDate.slice(0,16);
                         _self.title=t[i].title;

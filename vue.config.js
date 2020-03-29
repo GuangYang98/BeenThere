@@ -1,6 +1,6 @@
 module.exports = {
-	publicPath:'./',
-	assetsDir: 'static',
+	publicPath:"./",
+	assetsDir: "static",
 	devServer: {
 			open: false,
 			disableHostCheck: true,
@@ -11,7 +11,7 @@ module.exports = {
 			proxy: null, // string | Object
 			// before: app => {}
 			headers: {
-			'Access-Control-Allow-Origin':'*',
+			"Access-Control-Allow-Origin":"*",
 			},
 	},
 	
