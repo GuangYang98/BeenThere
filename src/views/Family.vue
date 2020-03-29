@@ -10,9 +10,9 @@
 
 <script>
 
-    import Footer from "../components/Footer.vue"
-    import Header from "../components/Header.vue"
-    import FamilyContent from "../components/FamilyContent.vue"
+    import Footer from "../components/Footer.vue";
+    import Header from "../components/Header.vue";
+    import FamilyContent from "../components/FamilyContent.vue";
 	// import ThanksLetter from "../components/ThanksLetter.vue"
     export default {
         name: "family",

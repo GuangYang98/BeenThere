@@ -8,9 +8,9 @@
 </template>
 
 <script>
-    import Footer from "../components/Footer.vue"
-    import Header from "../components/Header.vue"
-    import BuddyContent from "../components/BuddyContent.vue"
+    import Footer from "../components/Footer.vue";
+    import Header from "../components/Header.vue";
+    import BuddyContent from "../components/BuddyContent.vue";
 
     export default {
         name: "buddies",
