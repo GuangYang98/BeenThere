@@ -1,19 +1,19 @@
 <template>
     <div class="buddy-content-wrapper">
-        <div style="height: 545px; width: 100%; overflow: hidden; ">
+        <div style="height: 30vw; width: 100%; overflow: hidden; ">
 
             <v-img :src="piclink" style="position: relative; top:-125%"></v-img>
         </div>
             <div class="post-date">
-                <h4 >{{date}}</h4>
-                <h1 style="vertical-align: center">{{title}}</h1>
+                <h4 style="font-size: 3vw;">{{date}}</h4>
+                <h1 style="font-size: 4vw">{{title}}</h1>
             </div>
 
-            <div class="sqs-row">
+        <v-col :offset-md="3" :md="6" :offset="1" :cols="10">
                 <div id="page">
                     <div class="intro-cont" v-html="cont"></div>
                 </div>
-            </div>
+        </v-col>
     </div>
 
 </template>
@@ -75,22 +75,18 @@
     .buddy-content-wrapper{
         background-color: white;
     }
-    .sqs-row{
-        width: 50%;
-        margin: 0 auto;
-    }
     .post-date{
         font-family: Roboto;
         z-index: 5;
         position: absolute;
-        top: 25%;
+        top: 10vw;
         font-weight: 500;
         font-size: 25%;
         letter-spacing: 2px;
         text-align: center;
         color: #fff;
         width: 100%;
-        height: 545px;
+        height: 30vw;
         -webkit-transform: translatez(0);
         background-size: 100%;
     }
@@ -102,7 +98,7 @@
         line-height: 1.4em;
         color: #47b8e1;
         font-style: normal;
-        font-size: 60px;
+        font-size: 3.5vw;
         letter-spacing: 1px;
         text-transform: none;
     }
@@ -111,17 +107,16 @@
         line-height: 1.4em;
         color: #fc6;
         font-style: normal;
-        font-size: 60px;
+        font-size: 3.5vw;
         letter-spacing: 2px;
         text-transform: capitalize;
     }
     .intro-cont p {
-        line-height: 1.6em;
+        line-height: 1.3em;
         font-family: Roboto;
         font-weight: 900;
         font-style: normal;
-        font-size: 18px;
-        letter-spacing: 2px;
+        font-size: 1.2vw;
         color: #0a0a0a;
         display: block;
         margin-block-start: 1em;
@@ -136,10 +131,7 @@
         -moz-box-sizing: border-box;
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
-        width: auto;
-        margin: auto;
-        max-width: 50%;
-        padding: 96px 32px;
+        padding: 5vw 0;
         -moz-osx-font-smoothing: auto;
         -webkit-font-smoothing: subpixel-antialiased;
     }
