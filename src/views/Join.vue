@@ -2,7 +2,7 @@
 	<div>
 		<Header style="position: fixed; display: block; z-index: 999999; -webkit-transition: .5s ease-in-out;" id="normal-header"/>
 		<JoinContent id="join-content"/>
-		<ThanksLetter/>
+		<!-- <ThanksLetter/> -->
 		<Footer style="padding-top: 5vw;"/>
 	</div>
 </template>
@@ -24,36 +24,35 @@ export default {
 	// ThanksLetter
   },
   mounted: () => {
-	
-	document.onreadystatechange = function (){
-			if(document.readyState == "complete") {
-				if(document.documentElement.clientWidth < 700) {
-					document.getElementById("join-content").style.fontSize="3vw";
-				}else{
-					document.getElementById("join-content").style.fontSize="1.3vw";
-				}
-				if(document.documentElement.clientWidth < 1000) {
-					document.getElementById("normal-header").style.height="14vw";
-					document.getElementById("normal-header").style.lineHeight="14vw";
-					document.getElementById("join-content").style.paddingTop="14vw";
-				}else{
-					document.getElementById("normal-header").style.height="140px";
-					document.getElementById("normal-header").style.lineHeight="140px";
-					document.getElementById("join-content").style.paddingTop="140px";
+		document.onreadystatechange = function (){
+				if(document.readyState == "complete") {
+					if(document.documentElement.clientWidth < 700) {
+						document.getElementById("join-content").style.fontSize="3vw";
+					}else{
+						document.getElementById("join-content").style.fontSize="1.3vw";
+					}
+					if(document.documentElement.clientWidth < 1000) {
+						document.getElementById("normal-header").style.height="14vw";
+						document.getElementById("normal-header").style.lineHeight="14vw";
+						document.getElementById("join-content").style.paddingTop="16vw";
+					}else{
+						document.getElementById("normal-header").style.height="140px";
+						document.getElementById("normal-header").style.lineHeight="140px";
+						document.getElementById("join-content").style.paddingTop="160px";
+					}
 				}
 			}
-		}
-	
+		
 		window.onresize = function () {
 			if(document.documentElement.clientWidth < 1000) {
 				document.getElementById("normal-header").style.height="14vw";
 				document.getElementById("normal-header").style.lineHeight="14vw";
-				document.getElementById("join-content").style.paddingTop="14vw";
+				document.getElementById("join-content").style.paddingTop="16vw";
 			}else{
 
 				document.getElementById("normal-header").style.height="140px";
 				document.getElementById("normal-header").style.lineHeight="140px";
-				document.getElementById("join-content").style.paddingTop="140px";
+				document.getElementById("join-content").style.paddingTop="160px";
 			}
 		}
 	}
@@ -63,6 +62,6 @@ export default {
 
 <style>
 	body{
-		background-color: #FFB74D;
+		background-color: #FFFFFF;
 	}
 </style>
