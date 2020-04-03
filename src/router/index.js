@@ -31,10 +31,11 @@ const routes = [
 		}
 	},
 	{
-		path: "/buddies/:name",
-		name: "buddies",
-		component: () => import("../views/Buddies.vue")
+		path: '/buddies/:name',
+		name: 'buddies',
+		component: () => import('../views/Buddies.vue')
 	},
+	
 	{
 		path: "/policy",
 		name: "policy",
