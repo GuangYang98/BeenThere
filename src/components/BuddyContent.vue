@@ -65,7 +65,7 @@
         },
         mounted() {
             document.documentElement.scrollTop = document.body.scrollTop  = 0;
-            document.getElementById("home-header").style.backgroundColor="transparent";
+            document.getElementById("family-header").style.backgroundColor="transparent";
             this.getBuddy()
         }
     }

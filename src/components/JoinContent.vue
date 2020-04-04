@@ -1,88 +1,123 @@
 <template>
-	<div style="padding-top: 140px; background-color: white;" id="join-content-block">
-		<div class="join-words" >
-			<p>欢迎加入 BeenThere 大家庭！在这里，你可以</p>
-			<ul style="margin-left: 2.2vw;">
-				<li style="margin-top: 1vw;"><p>获得有关心理咨询的第一手知识与实践 </p></li>
-				<li style="margin-top: 1vw;"><p>帮助他人走出困境、迸发潜能</p></li>
-				<li style="margin-top: 1vw;"><p>疏解自己的困扰，实现自己的目标</p></li>
-				<li style="margin-top: 1vw;"><p>遇见彩虹一般的人</p></li>
-			</ul>
-			
-			<p style="margin-top: 3vw;">作为兼职志愿者，主要的投入包括</p>
-			<ul style="margin-left: 2.2vw;">
-				<li style="margin-top: 1vw;"><p>作为兼职志愿者，主要的投入包括：</p></li>
-				<li style="margin-top: 1vw;"><p> 3～5 小时（培训+服务）</p></li>
-				<li style="margin-top: 1vw;"><p>不定期撰写知识文章</p></li>
-			</ul>
-			<p style="margin-top: 5vw;">请填写有效信息，提交后会有小助手与您取得联系！</p>
+	<div class="join-text-wrapper">
+		<div class="join-title" >
+			<p>欢迎加入 BeenThere 大家庭！</p>
 		</div>
-		<div class="join-question-title">
-			<div>
-				<p>您的姓名 *</p>
-				<v-text-field style="width: 50vw;"></v-text-field>
+		<div>
+			<div class="join-block">
+				<v-img src="../assets/join/onlinebuddy.png" eager class="join-img"></v-img>
+				<div class="join-block-content">
+					<a href="https://wj.qq.com/s2/5703103/1d0b/" style="font-size: 3.5vw;">报名 Online Buddy</a>
+					<p style="margin-top: 3vw;">作为提供倾听服务的志愿者，你将收获</p>
+					<ul class="join-block-list">
+						<li style="margin-top: 0.3vw;">帮助他人走出困境、实现目标</li>
+						<li style="margin-top: 0.3vw;">学习心理知识、提升咨询技巧</li>
+						<li style="margin-top: 0.3vw;">锻炼共情和沟通——AI时代最重要的人类能力</li>
+						<li style="margin-top: 0.3vw;">为学业、职业的发展增加助力</li>
+						<li style="margin-top: 0.3vw;">结识一群温暖、善良、优秀的同路人</li>
+					</ul>
+					<a href="https://wj.qq.com/s2/5703103/1d0b/">我要报名</a>
+				</div>
 			</div>
-			
-			<div>
-				<p>您的微信ID *</p>
-				<v-text-field style="width: 50vw;"></v-text-field>
+			<v-divider></v-divider>
+			<div class="join-block">
+				<div class="join-block-content">
+					<a href="https://mp.weixin.qq.com/s/kdycFK7AJUqPyhVEjw7DKw" style="font-size: 3.5vw;">报名校园大使</a>
+					<p style="margin-top: 3vw;">作为校园大使的你将负责</p>
+					<ul class="join-block-list">
+						<li style="margin-top: 0.3vw;">代表BeenThere与高校、高中开展合作</li>
+						<li style="margin-top: 0.3vw;">收集反馈校内信息，开展学生端的市场调研</li>
+						<li style="margin-top: 0.3vw;">运用BeenThere和校内资源多样化宣传推广</li>
+						<li style="margin-top: 0.3vw;">负责校园活动的筹备、协调安排与现场支援</li>
+					</ul>
+					<a href="https://mp.weixin.qq.com/s/kdycFK7AJUqPyhVEjw7DKw">我要报名</a>
+				</div>
+				<v-img src="../assets/join/campus.png" eager class="join-img"></v-img>
 			</div>
-			
-			<div>
-				<p>您的常用邮箱 *</p>
-				<v-text-field style="width: 50vw;"></v-text-field>
+			<v-divider></v-divider>
+			<div class="join-block">
+				<v-img src="../assets/join/internship.png" eager class="join-img" style="height: 30vw;"></v-img>
+				<div class="join-block-content">
+					<a href="https://mp.weixin.qq.com/s/KXe5Ok_pF0NDhxuXREiZbA" style="font-size: 3.5vw;">报名实习生</a>
+					<p style="margin-top: 3vw;">作为 BeenThere 实习生，你将获得</p>
+					<ul class="join-block-list">
+						<li style="margin-top: 0.3vw;">BeenThere官方实习证书，助力学业、职业发展</li>
+						<li style="margin-top: 0.3vw;">享受提供给内部成员的所有配套资源与福利</li>
+						<li style="margin-top: 0.3vw;">深入了解初创企业的管理运营及创新实践</li>
+						<li style="margin-top: 0.3vw;">软实力的提升与自我成长</li>
+						<li style="margin-top: 0.3vw;">结实一群有趣有梦的同路人</li>
+					</ul>
+					
+					<p>目前开放的实习生岗位有</p>
+					<ul class="join-block-list">
+						<li style="margin-top: 0.3vw;">新媒体及短视频运营实习生</li>
+						<li style="margin-top: 0.3vw;">技术与产品管理实习生</li>
+						<li style="margin-top: 0.3vw;">平面设计师</li>
+						<li style="margin-top: 0.3vw;">商务实习生</li>
+					</ul>
+					<a href="https://mp.weixin.qq.com/s/KXe5Ok_pF0NDhxuXREiZbA">我要报名</a>
+				</div>
 			</div>
-			
-			<div>
-				<p>您的学校、专业，或工作单位、现任岗位 *</p>
-				<p style="color: gray; font-size: 1.5vw;" id="join-comment">为保证团队质量，我们会进行一定的背景调查</p>
-				<v-text-field style="width: 50vw;"></v-text-field>
-			</div>
-			
-			<div>
-				<p>请您简单介绍一下自己 *</p>
-				<v-text-field style="width: 50vw;"></v-text-field>
-			</div>
-			
-			<div>
-				<p>为什么希望加入 BeenThere？ *</p>
-				<v-text-field style="width: 50vw;"></v-text-field>
-			</div>
-			
-			
-		</div>
-		<div class="join-submit">
-			<v-btn style="background-color: #FFB74D; color: white;" large>
-				提交
-			</v-btn>
 		</div>
 	</div>
 </template>
 
 <script>
+	// import Menu from "./Menu.vue"
 	export default {
 		name: "JoinContent",
-		
+		components:{
+			// Menu,
+		},
+		mounted: () => {
+			
+		}
 	}
 	
 </script>
 
-<style>
-	.join-words{
-		font-family: arial rounded mt bold; 
-		padding-left: 5vw; 
-		padding-top: 5vw; 
-		font-weight: bold;
+<style scoped>
+	.join-text-wrapper{
+		margin-left: 20vw;
+		width: 60vw;
+		font-size: 1px;
+		font-weight: bold;  
+		font-family: roboto;
+		height: auto;  
+		word-wrap:break-word;  
+		word-break:break-all;
+		padding-bottom: 2vw;
+		/* text-align: center; */
 	}
-	.join-question-title{
-		font-family: arial rounded mt bold; 
-		padding-left: 5vw; 
-		padding-top: 3vw;
+	.join-title{
+		margin-top: 3vw;
+		font-size: 3.5vw;
+		color: #E07171;
+		text-align: center;
 	}
-	.join-submit{
-		font-family: arial rounded mt bold; 
-		padding-left: 5vw; 
-		padding-top: 1vw; 
-		padding-bottom: 3vw;
+	.join-img{
+		width: 25vw;
+		height: 20vw;
+		display: inline-block;
 	}
+	.join-block{
+		margin-top: 2vw; 
+		padding-bottom: 2vw;
+	}
+	.join-block-content{
+		display: inline-block;
+		padding: 2vw;
+	}
+	.join-block-list{
+		margin-left: 30px;
+		margin-top: 1.5vw;
+		padding-bottom: 1vw;
+	}
+	body{
+		background-color: #FFFFFF;
+	}
+	a{
+		color: #FFB74D;
+	}
+	
 </style>

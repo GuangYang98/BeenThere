@@ -7,16 +7,20 @@
         >
           <template v-slot:activator="{ on }">
             <v-btn
-              class="purple"
-              style="background-color: transparent;"
-              v-on="on"
-				fab
-			small
-			depressed
+            x-large
+            style="background-color: #FFB74D;"
+              v-on="on" v-if="getWidth()>800"
             >
-				<v-app-bar-nav-icon ></v-app-bar-nav-icon>
-				
+            <div style="color: white; font-weight: bold; font-size: 1.5vw;">加入我们</div>
             </v-btn>
+			<v-btn
+			small
+			style="background-color: #FFB74D;;"
+			v-on="on" v-else
+			>
+			<div style="color: white; font-weight: bold; font-size: 1.5vw;">加入我们</div>
+				
+			</v-btn>
           </template>
           <v-list style="background-color: dodgerblue; font-weight: 700;">
             <v-list-item
@@ -24,7 +28,7 @@
               :key="i"
               @click="jump(item.title)"
             >
-              <v-list-item-title style="color: white;">{{ item.title }}</v-list-item-title>
+              <v-list-item-title style="color: white; ">{{ item.title }}</v-list-item-title>
             </v-list-item>
           </v-list>
         </v-menu>
@@ -36,19 +40,22 @@ export default {
 	name: "Menu",
 	data: () => ({
 		items: [
-		{ title: '主页' },
-		{ title: 'Beenthere 大家庭' },
-		{ title: '我要加入' },
+		{ title: "校园大使" },
+		{ title: "实习生" },
+		{ title: "Online Buddy" },
 	],
 	}),
 	methods:{
 		jump: function(keyword){
-			if(keyword == "我要加入")
-				window.location.href="/join";
-			else if(keyword == "主页")
-				window.location.href="/";
+			if(keyword == "校园大使")
+				window.location.href="https://wj.qq.com/s2/5251276/c88e";
+			else if(keyword == "Online Buddy")
+				window.location.href="https://wj.qq.com/s2/5703103/1d0b/";
 			else
-				window.location.href="/family";
+				window.location.href="https://wj.qq.com/s2/5282581/c2cd/";
+		},
+		getWidth(){
+			return document.documentElement.clientWidth;
 		}
 	}
 }

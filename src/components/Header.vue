@@ -1,87 +1,84 @@
 <template>
 	<div class="header-block" id="header-block">
-		<a href="/">
-			<img src="../assets/logo.png" class="header-logo" id="logo">
-		</a>
-		
-		<Menu id="scaled-menu" class="header-scaled-menu" style="display: none;"/>
-		<div class="header-text-nav" id="nav" style="display: none;">
-			<a class="header-home" href="/">主页</a>
-			<a class="header-members" href="/family">Beenthere大家庭</a>
-			<a class="header-join" href="/join">我要加入</a>
+		<div v-if="getWidth()>800">
+			<a href="/">
+				<img src="../assets/logo.png" class="header-logo" id="logo" style="width: 296px; height: 100px; margin-top: 20px;">
+			</a>
+			<div class="header-text-nav" id="nav" style="font-size: 27px;">
+				<a class="header-home" href="/">主页</a>
+				<a class="header-members" href="/family">Beenthere大家庭</a>
+				<a class="header-join" href="/join">我要加入</a>
+			</div>
 		</div>
+		<div v-else>
+			<a href="/">
+				<img src="../assets/logo.png" class="header-logo" id="logo" style="width: 29.6vw; height: 10vw; margin-top: 2vw;">
+			</a>
+			<div class="header-text-nav" id="nav" style="font-size: 3vw;">
+				<a class="header-home" href="/">主页</a>
+				<a class="header-members" href="/family">Beenthere大家庭</a>
+				<a class="header-join" href="/join">我要加入</a>
+			</div>
+		</div>
+
 	</div>
 </template>
 
 <script>
-	import Menu from "./Menu.vue"
-	console.log(window.location.href);
-	if(window.location.href.toString().search("join") == -1 && window.location.href.toString().search("about") == -1 && window.location.href.toString().search("family") == -1) {
-		window.onscroll = function() {
-			if(window.pageYOffset >= 140) {
-				document.getElementById("home-header").style.backgroundColor="#EF6C00";
-			}else{
-				document.getElementById("home-header").style.backgroundColor="transparent";
-			}
-		}
-	}
-	document.onreadystatechange = function (){
-		if(document.readyState == "complete") {
-			if(document.documentElement.clientWidth < 800) {
-				document.getElementById("nav").style.display="none";
-				document.getElementById("scaled-menu").style.display="";
-			}else{
-				document.getElementById("nav").style.display="";
-				document.getElementById("scaled-menu").style.display="none";
-			}
-			if(window.location.href.toString().search("join") != -1) {
-				if(document.documentElement.clientWidth < 500) {
-					document.getElementById("join-content-block").style.fontSize="3vw";
-					document.getElementById("join-comment").style.fontSize="2.5vw";
-				}else{
-					document.getElementById("join-content-block").style.fontSize="1.3vw";
-					document.getElementById("join-comment").style.fontSize="1vw";
-				}
-			}
-		}
-		
-	}
+	// import Menu from "./Menu.vue"
+	// console.log(window.location.href);
+	// if(window.location.href.toString().search("join") == -1 && window.location.href.toString().search("about") == -1 && window.location.href.toString().search("family") == -1) {
+	// 	window.onscroll = function() {
+	// 		if(window.pageYOffset >= 140) {
+	// 			document.getElementById("home-header").style.backgroundColor="#EF6C00";
+	// 		}else{
+	// 			document.getElementById("home-header").style.backgroundColor="transparent";
+	// 		}
+	// 	}
+	// }
+	// document.onreadystatechange = function (){
+	// 	if(document.readyState == "complete") {
+	// 		if(document.documentElement.clientWidth < 800) {
+	// 			document.getElementById("nav").style.display="none";
+	// 			document.getElementById("scaled-menu").style.display="";
+	// 		}else{
+	// 			document.getElementById("nav").style.display="";
+	// 			document.getElementById("scaled-menu").style.display="none";
+	// 		}
+	// 		if(window.location.href.toString().search("join") != -1) {
+	// 			if(document.documentElement.clientWidth < 500) {
+	// 				document.getElementById("join-content-block").style.fontSize="3vw";
+	// 				document.getElementById("join-comment").style.fontSize="2.5vw";
+	// 			}else{
+	// 				document.getElementById("join-content-block").style.fontSize="1.3vw";
+	// 				document.getElementById("join-comment").style.fontSize="1vw";
+	// 			}
+	// 		}
+	// 	}
+	//
+	// }
 	
-	
-	window.onresize = function () {
-		// console.log("宽度：" + document.documentElement.clientWidth);
-		if(document.documentElement.clientWidth < 800) {
-			// document.getElementById("nav").style.visibility="hidden";
-			document.getElementById("nav").style.display="none";
-			document.getElementById("scaled-menu").style.display="";
-		}else{
-			// document.getElementById("nav").style.visibility="visible";
-			document.getElementById("nav").style.display="";
-			document.getElementById("scaled-menu").style.display="none";
-		}
-	}
 	export default {
 		name: "Header",
 		components:{
-			Menu,
+			// Menu,
 		},
-		
+		methods: {
+			getWidth(){
+				return document.documentElement.clientWidth;
+			}
+		}
 	}
 </script>
 
 <style>
 	.header-block{
-		/* background-color: #2892b8; */
-		background-color: #EF6C00;
+		background-color: #2892b8;
+		/* background-color: #EF6C00; */
 		width: 100%;
-		height: 140px;
-		line-height: 140px;
-		font-family: "arial rounded mt bold";
+		font-family: Roboto;
 	}
 	.header-logo{
-		width: 296px;
-		height: 100px;
-		margin-top: 20px;
 		margin-left: 1.3vw;
 		float: left;
 		display: inline;
@@ -96,23 +93,20 @@
 	}
 	.header-home{
 		display: inline;
-		font-size: 27px;
 		font-weight: bold;
 		color: white;
-		margin-right: 25px;
+		margin-right: 2.5vw;
 	}
 	.header-members{
 		display: inline;
 		font-weight: bold;
-		font-size: 27px;
 		color: white;
-		margin-right: 25px;
+		margin-right: 2.5vw;
 	}
 	.header-join{
 		display: inline;
-		font-size: 27px;
 		font-weight: bold;
-		padding: 20px;
+		padding: 1.2vw;
 		-webkit-transition-property:background-color, color;
 		-webkit-transition-duration:0.5s;
 		-webkit-transition-timing-function: ease;
@@ -128,5 +122,8 @@
 	.header-scaled-menu{
 		float:right;
 		margin-right: 4vw; 
+	}
+	a{
+		text-decoration: none;
 	}
 </style>

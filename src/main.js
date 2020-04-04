@@ -1,19 +1,18 @@
-import Vue from 'vue'
-import App from './App.vue'
-import router from './router'
-import store from './store'
-import vuetify from './plugins/vuetify';
-import Tawk from 'vue-tawk'
-import 'roboto-fontface/css/roboto/roboto-fontface.css'
-import '@mdi/font/css/materialdesignicons.css'
-import x2js from 'x2js'
+import Vue from "vue";
+import App from "./App.vue";
+import router from "./router";
+import store from "./store";
+import vuetify from "./plugins/vuetify";
+import Tawk from "vue-tawk";
+import x2js from "x2js";
+import '@mdi/font/css/materialdesignicons.css';
 
-Vue.prototype.$x2js = new x2js()
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
+Vue.prototype.$x2js = new x2js();
 
 
 Vue.use(Tawk, {
-    tawkSrc: 'https://embed.tawk.to/5d0cf96336eab972111899f7/default'
+    tawkSrc: "https://embed.tawk.to/5d0cf96336eab972111899f7/default"
 });
 
 router.beforeEach((to, from, next) => {
@@ -22,7 +21,7 @@ router.beforeEach((to, from, next) => {
     document.title = to.meta.title
   }
   next()
-})
+});
 
 new Vue({
   router,
@@ -30,4 +29,4 @@ new Vue({
   Tawk,
   vuetify,
   render: h => h(App)
-}).$mount('#app')
+}).$mount("#app");
